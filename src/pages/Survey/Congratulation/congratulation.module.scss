@@ -1,0 +1,306 @@
+.main_container {
+  background-image: url("/images/New-card.png");
+  min-height: 100vh;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+.congratulations_container {
+  display: flex;
+  align-content: center;
+  padding: 5%;
+  width: auto;
+  position: relative;
+  justify-content: space-around;
+  grid-gap: 15em;
+  gap: 5em;
+}
+.container_swoosh {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  position: relative;
+}
+.swoosh_image {
+  position: relative;
+  margin-left: -20em;
+  padding-top: 4em;
+}
+.text_swoosh {
+  // padding-bottom: 13em;
+  margin-top: -8em;
+}
+.text_swoosh p:nth-child(1) {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  line-height: 1em;
+}
+.text_swoosh p:nth-child(2) {
+  font-size: 1.4em;
+  color: white;
+  font-weight: 300;
+  margin-top: -1.5em;
+  position: relative;
+  line-height: 1em;
+}
+.copyright_footer {
+  color: white;
+  font-size: 1em;
+  margin-left: 12em;
+  margin-top: auto;
+  font-family: Lato, sans-serif;
+}
+.congratulation_message {
+  background-color: whitesmoke;
+  z-index: 999;
+  padding: 1.5em;
+  padding-bottom: 2em;
+  border-radius: 1em;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  margin-top: 10em;
+  margin-right: 3.5em;
+  p {
+    text-align: center;
+  }
+  .congratulation_title {
+    font-size: clamp(0.875em, 6.25vw, 1.625em);
+    font-weight: 600;
+  }
+  .congratulation_subtitle {
+    font-weight: 900;
+  }
+  .message {
+    font-size: clamp(1em, 100vw, 1em);
+    color: #737373;
+    text-align: left;
+    justify-content: center;
+    padding-left: 0.5em;
+  }
+  .second_message {
+    font-size: clamp(1em, 100vw, 1em);
+    color: #737373;
+  }
+  .checkmark {
+    max-height: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .checkmark_icon {
+      max-height: 7em;
+    }
+  }
+  .redirect_button {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 2em;
+    align-items: center;
+    background-color: #00beaf;
+    width: 15em;
+    padding: 0.8em;
+    .submit {
+      color: white;
+    }
+  }
+}
+@media screen and (width>1300px) {
+  .copyright_footer {
+    padding-left: 1em;
+  }
+  .swoosh_image {
+    max-height: 24em;
+    min-width: 13em;
+  }
+  .text_swoosh {
+    max-width: 20em;
+  }
+  .redirect_button {
+    margin-left: 2em;
+  }
+}
+
+@media screen and (height<2000px) and (width<1300px) {
+  .main_container {
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+  }
+  .text_swoosh {
+    padding-bottom: 7em;
+    max-width: 20em;
+  }
+  .copyright_footer {
+    margin-top: -2em;
+    padding-left: 1em;
+  }
+  .container_swoosh {
+    margin-top: -2em;
+  }
+  .swoosh_image {
+    position: relative;
+    margin-left: -10em;
+    padding-top: 1em;
+  }
+  .congratulation_message {
+    min-width: 30%;
+    margin-top: 5em;
+    margin-right: -3em;
+  }
+  .text_swoosh {
+    margin-left: 10em;
+  }
+  .redirect_button {
+    margin-left: 2em;
+  }
+}
+@media screen and (height<2000px) and (width<1200px) {
+  .swoosh_image {
+    max-width: 70%;
+    padding-top: 3em;
+    max-height: 1%;
+    margin-left: 0;
+  }
+  .congratulation_message {
+    min-width: 38%;
+    margin-top: 2em;
+    margin-right: 1em;
+  }
+  .text_swoosh {
+    margin-top: -16em;
+    max-width: 12em;
+    font-family: Lato, sans-serif;
+    line-height: 10em;
+  }
+  .text_swoosh p:nth-child(1) {
+    font-size: 1.8em;
+    line-height: 1.5em;
+  }
+  .text_swoosh p:nth-child(2) {
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 1.5em;
+    max-width: 8em;
+  }
+  .copyright_footer {
+    margin-top: -6em;
+    margin-left: 7em;
+  }
+}
+@media screen and (width<900px) {
+  .congratulations_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 1em;
+  }
+
+  .congratulation_message {
+    margin-top: 0;
+  }
+  .swoosh_image {
+    max-width: 18em;
+    margin-left: -5em;
+  }
+  .copyright_footer {
+    margin-top: 1em;
+    text-align: center;
+    margin-left: 0;
+  }
+  .container_swoosh {
+    display: flex;
+    gap: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3.9em;
+    margin-top: 1.1em;
+  }
+  .text_swoosh {
+    margin-top: 0;
+    max-width: 14em;
+    padding: 1em;
+    margin-left: 0.8em;
+    .text_swoosh p:nth-child(1) {
+      font-size: 1.7em;
+      font-weight: 600;
+      color: white;
+      position: relative;
+      line-height: 1em;
+    }
+  }
+  .text_swoosh p:nth-child(2) {
+    max-width: 20em;
+    line-height: 0.9em;
+    font-weight: 400;
+  }
+}
+@media screen and (width<600px) {
+  .congratulations_container {
+    gap: 0;
+  }
+  .container_swoosh {
+    margin-top: -5em;
+  }
+  .swoosh_image {
+    max-width: 10em;
+    margin-left: -3em;
+  }
+  .text_swoosh {
+    margin-top: 0;
+    max-width: 14em;
+    padding: 0;
+    margin: 0;
+  }
+  .text_swoosh p:nth-child(1) {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    line-height: 1.4em;
+    margin-top: 7em;
+  }
+  .text_swoosh p:nth-child(2) {
+    max-width: 100%;
+    line-height: 1.4em;
+    font-weight: 400;
+    font-size: 0.9em;
+  }
+  .congratulation_message {
+    min-width: 70%;
+  }
+  .redirect_button{
+    margin-left: 0;
+  }
+}
+@media screen and (width<400px) {
+  .container_swoosh {
+    gap: 1em;
+  }
+  .text_swoosh p:nth-child(1) {
+    margin-top: 5em;
+  }
+  .swoosh_image {
+ 
+    margin-left: -4em;
+  }
+  .text_swoosh p:nth-child(2) {
+   
+    font-size: 0.8em;
+  }
+  .redirect_button{
+    margin-left: 0;
+  }
+}

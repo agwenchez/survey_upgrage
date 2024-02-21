@@ -1,0 +1,143 @@
+.inm__interested {
+  padding: 4em;
+  min-width: 30em;
+  place-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 auto;
+
+  .thank_message {
+    max-width: 23em;
+    margin-left: -8em;
+
+    span:first-of-type {
+      width: 90%;
+      font-size: 1.4em;
+      color: #3d3d3d;
+      font-weight: bold;
+      font-family: arial;
+    }
+
+    span:last-of-type {
+      font-size: 2.8em;
+      color: #223d6f;
+      font-family: arial;
+      font-weight: bold;
+      display: inline-block;
+      max-width: 7em;
+    }
+  }
+}
+
+.value_message {
+  max-width: 20em;
+  margin-left: -8em;
+}
+
+.web_button {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin-left: -2em;
+
+  button {
+    background-image: linear-gradient(142deg, #002cc4 5%, #00b4a9 97%);
+    min-width: 12em;
+    min-height: 3em;
+    text-align: center;
+    border-radius: 0.3em;
+    outline: none;
+    border: none;
+  }
+
+  span {
+    display: inline-block;
+    font-size: 1em;
+    color: #00beaf;
+    max-width: 13em;
+    min-height: 2em;
+    padding: 6px 0;
+  }
+}
+
+@media screen and (width>1300px) {
+  .inm__interested {
+    margin-bottom: 21.5%;
+    margin-left: -18%;
+    min-height: 26.5vh;
+  }
+}
+
+@media screen and (width< 1300px) {
+  .inm__interested {
+    flex: 1 0 auto;
+    margin-left: -26%;
+    min-height: 52.3vh;
+  }
+}
+
+@media screen and (width <900px) {
+  .inm__interested {
+    margin-top: -4em;
+    margin-left: -40%;
+
+    min-height: 55%;
+  }
+}
+
+@media screen and (width<650px) {
+  .inm__interested {
+    margin-left: -6em;
+    padding-bottom: 23%;
+  }
+}
+
+@media only screen and (width< 500px) {
+  .inm__interested {
+    margin: 0;
+    min-width: 10em;
+    text-align: center;
+    max-height: 20em;
+    margin-top: -7em;
+    padding-bottom: 55%;
+
+    .thank_message {
+      max-width: 23em;
+      margin-left: -3em;
+
+      span:first-of-type {
+        width: 90%;
+        font-size: 1.2em;
+        color: #3d3d3d;
+        font-weight: 600;
+        font-family: arial;
+      }
+
+      span:last-of-type {
+        font-size: 1.8em;
+      }
+    }
+  }
+
+  .web_button {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -6em;
+    padding-top: 1em;
+    font-size: 0.9em;
+  }
+
+  .value_message {
+    max-width: 11.5em;
+    margin-left: -3em;
+  }
+}
+
+@media only screen and (width< 400px) {
+  .inm__interested {
+    margin-top: -5em;
+  }
+}

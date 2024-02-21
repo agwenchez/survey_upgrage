@@ -1,0 +1,202 @@
+version: 2.1
+executors:
+    node-executor:
+        docker:
+            - image: cimg/node:18.12.1
+        working_directory: ~/campaign-survey-upgrade
+    
+    docker-executor:
+        docker:
+            - image: docker:18.06.3-ce-git
+        working_directory: ~/campaign-survey-upgrade
+
+jobs:
+    dependencies:
+        executor: node-executor
+        steps:
+            - checkout
+            - restore_cache:
+                key: CampaignSurvey-{{ checksum "package.json" }}-{{ .Branch }}
+                keys:
+                    - CS-{{ checksum "package.json" }}
+            
+            - run:
+                name: Download dependencies
+                command: yarn install --frozen-lockfile
+            
+            - save_cache:
+                key: CampaignSurvey-{{ checksum "package.json" }}-{{ .Branch }}
+                paths: ~/node_modules
+                keys:
+                    - CS-{{ checksum "package.json" }}
+            
+            - persist_to_workspace:
+                root: .
+                paths: .
+
+            - run:
+                name: Install dependencies
+                command: yarn install --frozen-lockfile
+            
+    test:
+        executor: node-executor
+        steps:
+            - attach_workspace:
+                at: .
+     
+            - restore_cache:
+                key: CampaignSurvey-{{ checksum "package.json" }}-{{ .Branch }}
+                keys:
+                    - CS-{{ checksum "package.json" }}
+            
+            - run:
+                name: Run tests
+                command: yarn -v
+   
+    build:
+        executor: node-executor
+        steps:
+            - attach_workspace:
+                at: .
+            
+            - restore_cache:
+                key: CampaignSurvey-{{ checksum "package.json" }}-{{ .Branch }}
+                keys:
+                    - CS-{{ checksum "package.json" }}
+            - run:
+                name: Run build
+                command: yarn run build
+            
+            - store_artifacts:
+                path: ./build/
+                destination: app
+            - persist_to_workspace:
+                root: .
+                paths: .
+
+    build_docker_image:
+        executor: docker-executor
+        steps:
+            - setup_remote_docker
+            - attach_workspace:
+                at: .
+            
+            - run:
+                name: Build application Docker image
+                command: |
+                    docker build -t iandm/campaign-survey-upgrade:$CIRCLE_SHA1 .
+            - run:
+                name: Save application Docker image
+                command: |
+                    docker save -o campaign-survey-upgrade-image.tar iandm/campaign-survey-upgrade:$CIRCLE_SHA1
+            
+            - persist_to_workspace:
+                root: .
+                paths: .
+            
+    push_latest:
+        executor: docker-executor
+        steps:
+            - setup_remote_docker
+            - attach_workspace:
+                at: .
+
+            - run:
+                name: Load application Docker image
+                command: |
+                    docker load --input campaign-survey-upgrade-image.tar
+           
+            - run:
+               name: Tag docker image
+               command: |
+                   docker tag iandm/campaign-survey-upgrade:$CIRCLE_SHA1 iandm/campaign-survey-upgrade:latest
+           
+            - run:
+                name: Push application Docker image
+                command: |
+                    docker login -u $DOCKER_USER -p $DOCKER_PASS
+                    docker push iandm/campaign-survey-upgrade:$CIRCLE_SHA1
+                    docker push iandm/campaign-survey-upgrade:latest
+    push_production:
+        executor: docker-executor
+        steps:
+            - setup_remote_docker
+            - attach_workspace:
+                at: .
+
+            - run:
+                name: Load application Docker image
+                command: |
+                    docker load --input campaign-survey-upgrade-image.tar
+            
+            - run:
+                name: Tag docker image
+                command: |
+                    docker tag iandm/campaign-survey-upgrade:$CIRCLE_SHA1 iandm/campaign-survey-upgrade:production
+            
+            - run:
+                name: Push application Docker image
+                command: |
+                    docker login -u $DOCKER_USER -p $DOCKER_PASS
+                    docker push iandm/campaign-survey-upgrade:$CIRCLE_SHA1
+                    docker push iandm/campaign-survey-upgrade:production
+    
+    publish_release:
+        executor: node-executor
+        steps:
+            - attach_workspace:
+                at: .
+
+            - run:
+                name: Publishing release
+                command: npx semantic-release
+
+workflows:
+  version: 2
+  test_build_push_tag:
+    jobs:
+    - dependencies
+
+    - test:
+        requires:
+        - dependencies
+
+    - build:
+        requires:
+        - test
+
+    - build_docker_image:
+        filters:
+          branches:
+            only:
+            - develop
+            - master
+        requires:
+        - build
+
+    - push_latest:
+        context: icube-context
+        filters:
+          branches:
+            only:
+            - develop
+        requires:
+        - build_docker_image
+
+    - push_production:
+        context: icube-context
+        filters:
+          branches:
+            only:
+            - master
+        requires:
+        - build_docker_image
+
+    - publish_release:
+        context: icube-context
+        filters:
+            branches:
+                only:
+                    - master
+        requires:
+            - build

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="194px" height="103px" viewBox="0 0 194 103" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-_Submit" transform="translate(-407.000000, -297.000000)" stroke="#0059B1">
+            <g id="Group-5" transform="translate(281.000000, 216.000000)">
+                <g id="Group-4" transform="translate(231.000000, 136.000000) rotate(30.000000) translate(-231.000000, -136.000000) translate(154.000000, 59.000000)">
+                    <g id="Group-8" transform="translate(52.865672, -0.000000)" stroke-width="7">
+                        <polyline id="Path-4" stroke-linecap="round" stroke-linejoin="round" transform="translate(56.888060, 38.623769) rotate(-30.000000) translate(-56.888060, -38.623769) " points="19.5373134 45.402734 35.7550935 61.6088437 94.238806 15.6386944"></polyline>
+                        <path d="M45.3955224,103.432836 C70.4667771,103.432836 90.7910448,83.1085682 90.7910448,58.0373134 C90.7910448,53.8656048 90.2283269,49.825326 89.174655,45.9882408 C87.6441829,40.414825 85.077899,35.2701057 81.6957236,30.7740034 C73.4125155,19.7627023 60.2356079,12.641791 45.3955224,12.641791 C20.3242677,12.641791 -4.54747351e-13,32.9660587 -4.54747351e-13,58.0373134 C-4.54747351e-13,83.1085682 20.3242677,103.432836 45.3955224,103.432836 Z" id="Oval"></path>
+                    </g>
+                    <path d="M17.3927768,103.042382 L42.6763589,77.7587994" id="Line-2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M62.7882992,124.303576 L71.4077021,115.684173" id="Line-2-Copy-2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M34.0569559,153.034919 L53.0196424,134.072232" id="Line-2-Copy-3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M0.628536066,148.537965 L49.5718813,99.5946203" id="Line-2-Copy" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
