@@ -9,7 +9,7 @@ const Congratulations = () => (
             {" "}
             <img
               src="/images/three_cards.png"
-              alt="swoosh"
+              alt="swoosh_image"
               className={styles.swoosh_image}
             />
           </div>
