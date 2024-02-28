@@ -9,7 +9,8 @@ import Interested from "./src/pages/Survey/InterestedCustomer";
 import UnInterestedSurveyQuestions from "./src/pages/Survey/UnInterestedSurveyQuestions";
 import SurveyLayout from "./src/layouts/SurveyLayout";
 import Congratulations from "./src/pages/Survey/Congratulation";
-import Conversion from "./src/pages/Survey/conversion";
+import Conversion from "./src/pages/Survey/Conversion";
+import ConversionLanding from "./src/pages/Survey/ConversionLanding/index.tsx";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -21,10 +22,13 @@ const App = () => {
           element={<Conversion />}
         />
         <Route
+          path="survey/conversion_landing"
+          element={<ConversionLanding />}
+        />
+        <Route
           path="/"
           element={<Navigate to="/survey/interested" replace />}
         />
-
         <Route path="/survey" element={<SurveyLayout />}>
           <Route index path="interested" element={<Interested />} />
           <Route
