@@ -9,11 +9,12 @@ const ConversionLanding = () => {
       >
         <img src="/images/logo.png" alt="I&M Bank Logo" />
       </a>
-      <div className={styles.top_left_div}>
-          <img src="/images/center.png" alt="WelcomeImage" />
-          <span className={styles.center_text}>The Legacy</span>
-          <br />
-          <p className={styles.center_text}>Builder</p></div>
+      <div className={styles.center_image}>
+        <img src="/images/center.png" alt="WelcomeImage" />
+        <span className={styles.center_text}>Welcome To</span>
+        <br />
+        <p className={styles.center_text}>The Upgrade</p>
+      </div>
       <div className={styles.mid_right_text}></div>
       <div className={styles.right_selection}></div>
       <div className={styles.left_selection}></div>

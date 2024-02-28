@@ -17,6 +17,26 @@ html, body{
   max-height: 100px; /* Set a maximum height */
 }
 
+.center_image{
+  position: relative; /* Add this to make left work */
+  left: 10%;
+  width: 70%;
+  top: 5%;
+  height: auto;
+  }
+  .center_text{
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 6%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+    line-height: 0.5em;
+    z-index: 1; /* Ensure the welcome text is above other elements */
+
+  }
+
     @media screen and (min-width: 1300px) {
       body {
         margin-bottom: 21.5%;
