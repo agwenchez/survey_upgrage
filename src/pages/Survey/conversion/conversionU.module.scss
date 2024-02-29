@@ -5,6 +5,9 @@ html, body{
   margin: 0;
   padding: 0;
   height: 200vh;
+  font-size:small;
+  
+  
 }
 .top_right_logo{
   position: absolute;
@@ -152,10 +155,63 @@ html, body{
     color: white;
     outline: none;
  }
- }
- 
-  
+ }  
 }
+.club_benefits{
+  position: relative;
+  top: 495px;
+  left: 60px;
+  width: 47%;
+  
+  table {
+    position: relative;
+    border-collapse: collapse;
+    width: 93%;
+    tr {
+      &:nth-child(even) {
+        background-color: rgba(108, 108, 108, 0.459); /* See-through grey background for even rows */
+        
+      }
+
+      td {
+        padding: 3px; 
+        border-radius: 5px;          
+      }
+    }
+  }
+  hr{
+    position: inherit;
+    width: 93%;
+    padding:0px;
+  }
+
+}
+.paygo_benefits{
+  position: absolute;
+  top: 745px;
+  right: 10px;
+  width: 47%;
+  
+  table {
+    position: relative;
+    border-collapse: collapse;
+    width: 93%;
+    tr {
+      &:nth-child(even) {
+        background-color: rgba(108, 108, 108, 0.459); /* See-through grey background for even rows */
+        
+      }
+
+      td {
+        padding: 3px; 
+        border-radius: 5px;          
+      }
+    }
+  }
+ 
+}
+
+
     @media screen and (min-width: 1300px) {
       body {
         margin-bottom: 21.5%;

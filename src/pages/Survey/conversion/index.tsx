@@ -71,7 +71,7 @@ const Conversion = () => {
         <button type="button"> Upgrade Now</button>
       </div>
       <div className={styles.right_selection}>
-      <p>
+        <p>
           <strong>Club Account</strong>
         </p>
         <p>
@@ -119,9 +119,86 @@ const Conversion = () => {
         </table>
         <button type="button"> Upgrade Now</button>
       </div>
-      
-      <div className={styles.bottom_left_benefits}></div>
+      <div className={styles.club_benefits}>
+        <p>
+          <strong>Other Club Benefits</strong>
+        </p>
+        <table>
+          <tr>
+            <td>Minimum Balance</td>
+            <td>Nil</td>
+          </tr>
+          <tr>
+            <td>Ledger Fees</td>
+            <td>Nil</td>
+          </tr>
+          <tr>
+            <td>Debit Card</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td>Card Annual/Replacement Fee</td>
+            <td>Nil</td>
+          </tr>
+          <tr>
+            <td>Card Annual/Replacement Fee</td>
+            <td>Nil</td>
+          </tr>
+          <tr>
+            <td>Card Annual/Replacement Fee</td>
+            <td>Nil</td>
+          </tr>
+          <tr>
+            <td>Card Annual/Replacement Fee</td>
+            <td>Nil</td>
+          </tr>
+        </table>
+        <hr />
+      </div>
+      <div className={styles.paygo_benefits}>
+        <p>
+          <strong>Other PayGo Benefits</strong>
+        </p>
+        <table>
+          <tr>
+            <td>Minimum Balance</td>
+            <td>Nil</td>
+          </tr>
+          <tr>
+            <td>Ledger Fees</td>
+            <td>Nil</td>
+          </tr>
+          <tr>
+            <td>Debit Card</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td>Card Annual/Replacement Fee</td>
+            <td>Nil</td>
+          </tr>
+          <tr>
+            <td>Card Annual/Replacement Fee</td>
+            <td>Nil</td>
+          </tr>
+          <tr>
+            <td>Card Annual/Replacement Fee</td>
+            <td>Nil</td>
+          </tr>
+          <tr>
+            <td>Card Annual/Replacement Fee</td>
+            <td>Nil</td>
+          </tr>
+        </table>
+        <hr />
+      </div>
       <div className={styles.bottom_right_benefits}></div>
+      <div className={styles.bottom_right_benefits}></div>
+      <p id={styles.bottom_text}>
+        <strong>
+          @2024 I&M Bank, All Rights Reserved {""}
+          <a href="https://www.imbankgroup.com/ke/">Terms & Conditions.</a>
+        </strong>
+      </p>
     </>
   );
 };
