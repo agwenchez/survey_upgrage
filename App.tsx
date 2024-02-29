@@ -9,8 +9,8 @@ import Interested from "./src/pages/Survey/InterestedCustomer";
 import UnInterestedSurveyQuestions from "./src/pages/Survey/UnInterestedSurveyQuestions";
 import SurveyLayout from "./src/layouts/SurveyLayout";
 import Congratulations from "./src/pages/Survey/Congratulation";
-import Conversion from "./src/pages/Survey/Conversion";
-import ConversionLanding from "./src/pages/Survey/ConversionLanding/index.tsx";
+import Conversion from "./src/pages/Survey/conversion";
+import ConversionLanding from "./src/pages/Survey/ConversionLanding";
 
 const App = () => {
   const router = createBrowserRouter(

@@ -135,7 +135,8 @@
         }
   
         td {
-          padding: 2.5px;          
+          padding: 2.5px;
+          border-radius: 5px;        
         }
       }
     }
@@ -149,6 +150,8 @@
   .bottom_buttons {
     position: relative;
     background-color: transparent;
+    display: grid;
+    grid-template-rows: auto;
     
   
     button {
