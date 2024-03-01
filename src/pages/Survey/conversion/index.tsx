@@ -72,7 +72,7 @@ const Conversion = () => {
       </div>
       <div className={styles.right_selection}>
         <p>
-          <strong>Club Account</strong>
+          <strong>PayGo Account</strong>
         </p>
         <p>
           The I&M Club Account is your unrivaled gateway to a world of
@@ -191,12 +191,104 @@ const Conversion = () => {
         </table>
         <hr />
       </div>
-      <div className={styles.bottom_right_benefits}></div>
-      <div className={styles.bottom_right_benefits}></div>
-      <p id={styles.bottom_text}>
+      <div className={styles.left_bottom_table}>
+        <table>
+          <p>
+            <strong>More Club Benefits</strong>
+          </p>
+          <tr>
+            <td>
+              <img src="/images/card.png" alt="CardImage" />
+              Free Debit Card
+            </td>
+            <td>
+              <img src="/images/plane.png" alt="AmrefPlaneImage" />
+              Free AMREF Maisha Bronze Cover
+            </td>
+            <td>
+              {" "}
+              <img src="/images/networking.png" alt="NetworkingImage" />
+              Access To Professional Networking Forums
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="/images/instructions.png" alt="InstructionImage" />
+              Free Standing Instruction Setup
+            </td>
+            <td>
+              <img src="/images/sms.png" alt="SMSNotificationImage" />
+              Free SMS Notification
+            </td>
+            <td>
+              <img src="/images/rewards.png" alt="RewardsImage" />
+              Rewards And Personalised offers
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="/images/atm.png" alt="ATMCardImage" />
+              Free ATM Usage(local and International)
+            </td>
+            <td>
+              <img src="/images/card.png" alt="CardImage" />
+              Free Debit Card
+            </td>
+            <td>
+              <img src="/images/card.png" alt="CardImage" />
+              Free Debit Card
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="/images/card.png" alt="CardImage" />
+              Free Debit Card
+            </td>
+            <td>
+              <img src="/images/loan.png" alt="LoanImage" />
+              Personal Unsecured Loan through Digital Channels
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div className={styles.right_bottom_table}>
+        <table>
+          <p>
+            <strong>More PayGo Benefits</strong>
+          </p>
+          <tr>
+            <td>
+              <img src="/images/card.png" alt="CardImage" />
+              Free Debit Card
+            </td>
+            <td>
+              <img src="/images/plane.png" alt="AmrefPlaneImage" />
+              Free AMREF Maisha Bronze Cover
+            </td>
+            <td>
+              {" "}
+              <img src="/images/networking.png" alt="NetworkingImage" />
+              Access To Professional Networking Forums
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="/images/instructions.png" alt="InstructionImage" />
+              Free Standing Instruction Setup
+            </td>
+          </tr>
+        </table>
+      </div>
+      <p className={styles.terms}>
         <strong>
-          @2024 I&M Bank, All Rights Reserved {""}
-          <a href="https://www.imbankgroup.com/ke/">Terms & Conditions.</a>
+          @2021 I&M Bank Limited, All rights reserved.
+          <br />
+          <a
+            target="_blank"
+            href="https://www.imbankgroup.com/ke/terms-and-conditions/"
+          >
+            Terms & Conditions.
+          </a>
         </strong>
       </p>
     </>

@@ -1,16 +1,16 @@
-html, body{
+html,
+body{
   background-color: black;
   color: white;
   overflow-y: scroll;
   margin: 0;
-  padding: 0;
-  height: 200vh;
-  font-size:small;
-  
+  padding: 0; 
+  height: 200%;
+  font-size:smaller; 
   
 }
 .top_right_logo{
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 30px;
   text-decoration: none;
@@ -18,6 +18,7 @@ html, body{
   height: auto; /* Maintain aspect ratio */
   max-width: 20%; /* Set a maximum width */
   max-height: 100px; /* Set a maximum height */
+  z-index: 1;
 }
 
 .center_image{
@@ -27,6 +28,7 @@ html, body{
   margin-top: 50px;
   height: 200px;
   img {
+    position: fixed;
     max-width: 70%;
     max-height: 70%;
   }
@@ -89,6 +91,7 @@ html, body{
   width: 40%;
   padding: 10px; 
   font-size: small;
+  
  
   &:not(:focus) {
     background-color: rgba(255, 98, 0, 0.868);
@@ -126,8 +129,8 @@ html, body{
       }
 
       td {
-        padding: 3px; 
-        border-radius: 5px;          
+        padding: 4px; 
+        border-radius: 9px;          
       }
     }
   }
@@ -204,69 +207,109 @@ html, body{
 
       td {
         padding: 3px; 
-        border-radius: 5px;          
+        border-radius: 5px;      
       }
     }
   }
  
 }
+.left_bottom_table{
+  position: relative;
+  top: 495px;
+  left: 60px;
+  width: 47%;
+  
 
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+   
+     
+    tr {
+       border-bottom: 10px solid black; // Lesser space between rows
+       
+      
+       &:last-child {
+         border-bottom: none; // Removes the border from the last row
+       }
+    }
+     
+    td {
+       padding: 5px; // Space inside each cell
+       border-radius: 10px;
+       text-align:left;
+       vertical-align: top; // Aligns the text to the top of the cell
+       background-color: rgba(108, 108, 108, 0.459);
+       border-right: 17px solid black;
+       
+       
+       img {
+         max-width: 80%; // Ensures images are responsive
+         height: auto;
+         margin-right: 7px; // Space between the image and text
+       }
+    }
+   }
+  }
+  
+.right_bottom_table{
+  position: absolute;
+  top: 965px;
+  right: 10px;
+  width: 47%;
 
-    @media screen and (min-width: 1300px) {
-      body {
-        margin-bottom: 21.5%;
-        margin-left: -18%;
-        min-height: 26.5vh;
-        overflow-y: auto;
-        max-height:max-content;      
-      }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+   
+     
+    tr {
+       border-bottom: 10px solid black; // Lesser space between rows
+       
+      
+       &:last-child {
+         border-bottom: none; // Removes the border from the last row
+       }
     }
+     
+    td {
+       padding: 5px; // Space inside each cell
+       border-radius: 10px;
+       text-align:left;
+       vertical-align: top; // Aligns the text to the top of the cell
+       background-color: rgba(108, 108, 108, 0.459);
+       border-right: 17px solid black;
+       
+       
+       img {
+         max-width: 80%; // Ensures images are responsive
+         height: auto;
+         margin-right: 7px; // Space between the image and text
+       }
+    }
+   }
+  }
+  .terms{
+    position: absolute;
+    bottom: -100%; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center the container horizontally */
+    width: auto; /* Adjust based on content width */
+    text-align: center; /* Center the text within the container */
+  }
+@media screen and (width< 768px) {
+  .top_right_logo {
+    top: 7px;
+    right: 7px;
     
-    @media screen and (max-width: 1300px) {
-      body {
-        flex: 1 0 auto;
-        margin-left: -26%;
-        min-height: 100vh;
-        overflow-y: auto;
-        max-height:max-content;
-      }
-    }
-    
-    @media screen and (max-width: 900px) {
-      body {
-        margin-top: -4em;
-        margin-left: -40%;
-        min-height: 55%;
-        overflow-y: auto;
-        max-height:max-content;
-      }
-    }
-    
-    @media screen and (max-width: 650px) {
-      body {
-        margin-left: -6em;
-        padding-bottom: 23%;
-        overflow-y: auto;
-        max-height: max-content;
-      }
-    }
-    
-    @media only screen and (max-width: 500px) {
-      body {
-        margin: 0;
-        min-width: 10em;
-        text-align: center;
-        max-height:max-content;
-        margin-top: -7em;
-        padding-bottom: 55%;
-        overflow-y: auto;
-      }
-    }
-    
-    @media only screen and (max-width: 400px) {
-      body {
-        margin-top: -5em;
-        overflow-y: auto;
-        max-height:max-content;
-      }
-    }
+  }
+
+  .center_image {
+    left: 2%;
+    width: 70%;
+  }
+
+  /* Adjust other styles for smaller screens */
+}
