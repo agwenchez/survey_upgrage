@@ -1,12 +1,15 @@
 html,
 body{
   background-color: black;
+  background-size: cover;
   color: white;
   overflow-y: scroll;
   margin: 0;
   padding: 0; 
   height: 200%;
-  font-size:smaller; 
+  font-size:smaller;
+  
+  
   
 }
 .top_right_logo{
@@ -86,7 +89,6 @@ body{
 
  button{
   cursor: pointer;
-  outline: none;
   border-radius: 20px;
   width: 40%;
   padding: 10px; 
@@ -96,11 +98,13 @@ body{
   &:not(:focus) {
     background-color: rgba(255, 98, 0, 0.868);
     color: white;
+    outline: none;
   }
 
   &:focus {
-    background-color: white;
-    color: black;
+    background-color: rgba(147, 59, 5, 0.749);
+    color: white;
+    outline: none;
  }
  }
  
@@ -162,8 +166,8 @@ body{
 }
 .club_benefits{
   position: relative;
-  top: 495px;
-  left: 60px;
+  top: 496px;
+  left: 3%;
   width: 47%;
   
   table {
@@ -216,7 +220,7 @@ body{
 .left_bottom_table{
   position: relative;
   top: 495px;
-  left: 60px;
+  left: 3%;
   width: 47%;
   
 
@@ -256,7 +260,7 @@ body{
 .right_bottom_table{
   position: absolute;
   top: 965px;
-  right: 10px;
+  right: 1%;
   width: 47%;
 
   table {
@@ -299,17 +303,293 @@ body{
     width: auto; /* Adjust based on content width */
     text-align: center; /* Center the text within the container */
   }
-@media screen and (width< 768px) {
+                            /*RESPONSIVENESS*/
+  /* 1. screen-width < 500px*/
+@media screen and (width< 600px) {
+  .main_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 1em;
+  }
   .top_right_logo {
-    top: 7px;
-    right: 7px;
+    top: 5px;
+    right: 1px;
     
   }
-
+  #midright_text{
+    top: 10%;
+    left: 45%;
+    line-height: 0.9em;
+  }
   .center_image {
     left: 2%;
-    width: 70%;
+    max-width: 60%;
+    margin-top: 5%;
+    
   }
+  .center_text {
+    left: 5%;
+    max-width: 80%;
+  }
+  #button{
+    position:absolute;
+    top: -7em;
+    max-width: 40%;    
+  }
+  .left_selection {
+    left: 1%;
+    max-width: 50%;
+    font-size: 1em;
+    p, table{
+      margin: 10px 10px 10px 5px;
+      line-height: 15px;
+    }
+   
+  }
+  .right_selection {
+    right: 1%;
+    max-width: 50%;
+    font-size: 1em;
+    p, table{
+      margin: 10px 10px 10px 5px;
+      line-height: 15px;
+    }
 
+  }
+  .club_benefits{
+    left: 1%;
+    max-width: 50%;
+    font-size: 1em;
+  }
+  .paygo_benefits{
+    right: 1%;
+    max-width: 50%;
+    margin-top: -2em;
+    font-size: 1em;
+  }
+  .left_bottom_table{
+    left: 1%;
+    max-width: 50%;
+    font-size: 0.8em;
+            
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+   
+     
+    tr {
+       border-bottom: 5px solid black; // Lesser space between rows
+             
+       &:last-child {
+         border-bottom: none; // Removes the border from the last row
+       }
+    }
+     
+    td {
+       padding: 2px; // Space inside each cell
+       border-radius: 10px;
+       text-align:left;
+       vertical-align: top; // Aligns the text to the top of the cell
+       background-color: rgba(108, 108, 108, 0.459);
+       border-right: 10px solid black;
+       
+       
+       img {
+         max-width: 65%; // Ensures images are responsive
+         height: auto;
+         margin-right: 5px; // Space between the image and text
+       }
+    }
+   }
+  }
+  .right_bottom_table{
+    right: 1%;
+    max-width: 50%;
+    font-size: 0.8em;
+    margin-top: -2em;
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+     
+       
+      tr {
+         border-bottom: 5px solid black; // Lesser space between rows
+               
+         &:last-child {
+           border-bottom: none; // Removes the border from the last row
+         }
+      }
+       
+      td {
+         padding: 2px; // Space inside each cell
+         border-radius: 10px;
+         text-align:left;
+         vertical-align: top; // Aligns the text to the top of the cell
+         background-color: rgba(108, 108, 108, 0.459);
+         border-right: 10px solid black;
+         
+         
+         img {
+           max-width: 65%; // Ensures images are responsive
+           height: auto;
+           margin-right: 5px; // Space between the image and text
+         }
+      }
+     }
+
+  }
   /* Adjust other styles for smaller screens */
 }
+
+/*2. screen-width < 500px*/
+
+
+@media screen and (width< 500px) {
+  .main_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 1em;
+  }
+  .top_right_logo {
+    top: 5px;
+    right: 1px;
+    
+  }
+  #midright_text{
+    top: 10%;
+    left: 45%;
+    line-height: 0.9em;
+  }
+  .center_image {
+    left: 2%;
+    max-width: 60%;
+    margin-top: 5%;
+    
+  }
+  .center_text {
+    left: 5%;
+    max-width: 80%;
+  }
+  #button{
+    position:absolute;
+    top: -7em;
+    max-width: 40%;    
+  }
+  .left_selection {
+    left: 1%;
+    max-width: 50%;
+    font-size: 1em;
+    p, table{
+      margin: 10px 10px 10px 5px;
+      line-height: 15px;
+    }
+   
+  }
+  .right_selection {
+    right: 1%;
+    max-width: 50%;
+    font-size: 1em;
+    p, table{
+      margin: 10px 10px 10px 5px;
+      line-height: 15px;
+    }
+
+  }
+  .club_benefits{
+    left: 1%;
+    max-width: 50%;
+    font-size: 1em;
+  }
+  .paygo_benefits{
+    right: 1%;
+    max-width: 50%;
+    margin-top: -2em;
+    font-size: 1em;
+  }
+  .left_bottom_table{
+    left: 1%;
+    max-width: 50%;
+    font-size: 0.8em;
+            
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+   
+     
+    tr {
+       border-bottom: 5px solid black; // Lesser space between rows
+             
+       &:last-child {
+         border-bottom: none; // Removes the border from the last row
+       }
+    }
+     
+    td {
+       padding: 2px; // Space inside each cell
+       border-radius: 10px;
+       text-align:left;
+       vertical-align: top; // Aligns the text to the top of the cell
+       background-color: rgba(108, 108, 108, 0.459);
+       border-right: 10px solid black;
+       
+       
+       img {
+         max-width: 65%; // Ensures images are responsive
+         height: auto;
+         margin-right: 5px; // Space between the image and text
+       }
+    }
+   }
+  }
+  .right_bottom_table{
+    right: 1%;
+    max-width: 50%;
+    font-size: 0.8em;
+    margin-top: -2em;
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+     
+       
+      tr {
+         border-bottom: 5px solid black; // Lesser space between rows
+               
+         &:last-child {
+           border-bottom: none; // Removes the border from the last row
+         }
+      }
+       
+      td {
+         padding: 2px; // Space inside each cell
+         border-radius: 10px;
+         text-align:left;
+         vertical-align: top; // Aligns the text to the top of the cell
+         background-color: rgba(108, 108, 108, 0.459);
+         border-right: 10px solid black;
+         
+         
+         img {
+           max-width: 65%; // Ensures images are responsive
+           height: auto;
+           margin-right: 5px; // Space between the image and text
+         }
+      }
+     }
+
+  }
+  /* Adjust other styles for smaller screens */
+}
+
+

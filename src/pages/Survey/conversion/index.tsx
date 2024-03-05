@@ -68,7 +68,10 @@ const Conversion = () => {
             <td>Free</td>
           </tr>
         </table>
-        <button type="button"> Upgrade Now</button>
+        <button id={styles.button} type="button">
+          {" "}
+          Upgrade Now
+        </button>
       </div>
       <div className={styles.right_selection}>
         <p>
@@ -117,7 +120,10 @@ const Conversion = () => {
             <td>Free</td>
           </tr>
         </table>
-        <button type="button"> Upgrade Now</button>
+        <button id={styles.button} type="button">
+          {" "}
+          Upgrade Now
+        </button>
       </div>
       <div className={styles.club_benefits}>
         <p>
