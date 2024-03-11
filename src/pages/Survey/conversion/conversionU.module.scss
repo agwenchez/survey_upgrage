@@ -467,28 +467,28 @@ padding: 0;
 }
 @media screen and (width <900px) {
   .top_text{
-    min-width: 25em;
+    min-width: 26em;
     top: 5em;
     right: 5em;
    }
    .left_selection{
     top:15em;
-    max-width: 28em;
+    max-width: 26em;
     left: 1em;
    }
    .right_selection{
     top:15em;
-    max-width: 28em;
+    max-width: 26em;
     right: 1em;
    }
    .club_benefits{
     top:47em;
-    max-width: 28em;
+    max-width: 26em;
     left:1em;
    }
    .paygo_benefits{
     top:47em;
-    max-width: 28em;
+    max-width: 26em;
     right:1em;    
    }
    .span_left{
@@ -498,7 +498,7 @@ padding: 0;
    }
    .grid_container1{
     top: 64em;
-    max-width: 28em;
+    max-width: 26em;
     left: 1em;
    }
    .span_right{
@@ -508,7 +508,7 @@ padding: 0;
    }
    .grid_container2{
     top: 64em;
-    max-width: 28em;
+    max-width: 26em;
     right: 1em;
    }
    .footer{
@@ -521,61 +521,61 @@ padding: 0;
  
 }
 
-@media only screen and (width< 600px) {
-  .top_text{
-    min-width: 15em;
-    top: 5em;
-    left: 23em;
-   }
-   .left_selection{
-    top:15em;
-    min-width: 35em;
-    left: 1em;
-   }
-   .right_selection{
-    top:45em;
-    min-width: 35em;
-    left: 1em;
-   }
-   .club_benefits{
-    top:75em;
-    max-width: 18em;
-    left:1em;
-   }
-   .paygo_benefits{
-    top:75em;
-    max-width: 18em;
-    left:19em;
-    
-   }
-   .span_left{
-    top:90em;
-    left:1em;
-    min-width: 10em;
-   }
-   
-   .grid_container1{
-    top: 92em;
-    min-width: 35em;
-    left: 1em;
-   }
-   .span_right{
-    top:125em;
-    left:1em;
-    min-width: 10em;
-   }
-   .grid_container2{
-    top: 127em;
-    min-width: 35em;
-    left: 1em;
-   }
-   .footer{
-    top: 143em;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    bottom: 0;
-    min-width: 25em;
-   }
+@media only screen and (width<700px) {
+    .top_text{
+      min-width: 15em;
+      top: 5em;
+      left: 23em;
+     }
+     .left_selection{
+      top:15em;
+      min-width: 35em;
+      left: 9em;
+     }
+     .right_selection{
+      top:45em;
+      min-width: 35em;
+      left: 9em;
+     }
+     .club_benefits{
+      top:75em;
+      max-width: 18em;
+      left:9em;
+     }
+     .paygo_benefits{
+      top:75em;
+      max-width: 18em;
+      left:27em;
+      
+     }
+     .span_left{
+      top:90em;
+      left:9em;
+      min-width: 10em;
+     }
+     
+     .grid_container1{
+      top: 92em;
+      min-width: 35em;
+      left: 9em;
+     }
+     .span_right{
+      top:125em;
+      left:9em;
+      min-width: 10em;
+     }
+     .grid_container2{
+      top: 127em;
+      min-width: 35em;
+      left: 9em;
+     }
+     .footer{
+      top: 143em;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      bottom: 0;
+      min-width: 25em;
+     }
 }
 
 @media only screen and (width< 400px) {
