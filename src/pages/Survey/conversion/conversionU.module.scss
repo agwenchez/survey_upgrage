@@ -1,75 +1,64 @@
-html,
-body{
+.main_container{
+  display: flex;
+  flex-direction: column;
   background-color: black;
-  background-size: cover;
   color: white;
   overflow-y: scroll;
+  font-size: small; 
   margin: 0;
-  padding: 0; 
-  height: 200%;
-  font-size:smaller;
-  
-  
-  
-}
-.top_right_logo{
+  padding: 0;
+ }
+ span{
+  margin-bottom: 10px;
+ }
+ .top_right_logo{
   position: fixed;
-  top: 20px;
-  right: 30px;
-  text-decoration: none;
-  width: 100px; /* Adjust the width as needed for a 500x500 image */
-  height: auto; /* Maintain aspect ratio */
-  max-width: 20%; /* Set a maximum width */
-  max-height: 100px; /* Set a maximum height */
+  right: 1em;
   z-index: 1;
-}
-
-.center_image{
-  position: relative; /* Add this to make left work */
-  left: 4%;
-  width: 50%;
-  margin-top: 50px;
-  height: 200px;
-  img {
+ }
+ .top_text{
+  position: absolute;
+  max-width: 22em;
+  top: 3em;
+  right: 25em;
+ }
+ .swoosh{
+  position: absolute;
+  left: 1em;
+  max-width: 20em;
+  top: 2em;
+  img{
     position: fixed;
-    max-width: 70%;
-    max-height: 70%;
+    max-width: 50em;
+    max-height: 50em;
   }
-  }
-  .center_text{
-    color: white;
-    position: absolute;
-    top: 14%;
-    left: 12%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+  span{
+    position: relative;
+    top: 1em;
+    left:2em;
     font-size: xx-large;
-    line-height: 1.5em;
-    z-index: 1; /* Ensure the welcome text is above other elements */
-
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1em;
   }
-#midright_text{
+  
+ }
+ .left_selection{
   position: absolute;
-  top: 10%;
-  left: 50%;
-  line-height: 0.7em;
-}
-.left_selection{
- position: absolute;
- background: url('/images/leftback.png') no-repeat center center;
- background-size: cover;
- top: 40%;
- left: 3%;
- height: 60%;
- width: 45%;
- border: 0.1px solid grey;
- border-radius: 17px;
-
-
-  table {
-    position: relative;
-    border-collapse: collapse;
-    width: 93%;
+  background: url('/images/leftback.png') no-repeat center center;
+  background-size: cover;
+  top: 15em;
+  left: 1em;
+  max-height: 32em;
+  max-width: 45em;
+  border: 0.1px solid grey;
+  border-radius: 17px;
+  p, table, button, span{
+    margin: 10px 10px 10px 10px;
+    line-height: 1.1em;
+  }
+  table{
+    border-collapse:separate;
     tr {
       &:nth-child(even) {
         background-color: rgba(108, 108, 108, 0.459); /* See-through grey background for even rows */
@@ -82,98 +71,43 @@ body{
       }
     }
   }
-  p, table, button{
-    margin: 20px 20px 20px 20px;
-    line-height: 18px;
-  }
-
- button{
-  cursor: pointer;
-  border-radius: 20px;
-  width: 40%;
-  padding: 10px; 
-  font-size: small;
-  
- 
-  &:not(:focus) {
-    background-color: rgba(255, 98, 0, 0.868);
-    color: white;
-    outline: none;
-  }
-
-  &:focus {
-    background-color: rgba(147, 59, 5, 0.749);
-    color: white;
-    outline: none;
- }
- }
- 
-}
-
-.right_selection{
-  position: absolute;
- background: url('/images/rightback.png') no-repeat center center;
- background-size: cover;
- top: 40%;
- right: 3%;
- height: 60%;
- width: 45%;
- border: 0.1px solid grey;
- border-radius: 17px;
-
-
-  table {
-    position: relative;
-    border-collapse: collapse;
-    width: 93%;
-    tr {
-      &:nth-child(even) {
-        background-color: rgba(108, 108, 108, 0.459); /* See-through grey background for even rows */
-        
-      }
-
-      td {
-        padding: 4px; 
-        border-radius: 9px;          
-      }
+  button{
+    cursor: pointer;
+    border-radius: 20px;
+    width: 40%;
+    padding: 10px; 
+    font-size: small;
+    
+   
+    &:not(:focus) {
+      background-color: rgba(255, 98, 0, 0.868);
+      color: white;
+      outline: none;
     }
-  }
-  p, table, button{
-    margin: 20px 20px 13px 20px;
-    line-height: 18px;
-  }
-
- button{
-  cursor: pointer;
-  border-radius: 20px;
-  width: 40%;
-  padding: 10px; 
-  font-size: small;
   
- 
-  &:not(:focus) {
-     background: linear-gradient(to right, #0735ce, #1abc9c); /* Set your color values */
-    color: white;
-    outline: none;
-  }
-
-  &:focus {
-    background: linear-gradient(to right, #1abc9c, #0735ce);  /* Reverse the colors on hover */
-    color: white;
-    outline: none;
+    &:focus {
+      background-color: rgba(147, 59, 5, 0.749);
+      color: white;
+      outline: none;
+   }
+   }
  }
- }  
-}
-.club_benefits{
-  position: relative;
-  top: 496px;
-  left: 3%;
-  width: 47%;
-  
-  table {
-    position: relative;
-    border-collapse: collapse;
-    width: 93%;
+ .right_selection{
+  position: absolute;
+  background: url('/images/rightback.png') no-repeat center center;
+  background-size: cover;
+  top: 15em;
+  right: 1em;
+  max-height: 32em;
+  max-width: 45em;
+  border: 0.1px solid grey;
+  border-radius: 17px;
+  p, table, button, span{
+    margin: 10px 10px 10px 10px;
+    line-height: 1.1em;
+  }
+  table{
+    border-collapse:separate;
     tr {
       &:nth-child(even) {
         background-color: rgba(108, 108, 108, 0.459); /* See-through grey background for even rows */
@@ -186,23 +120,35 @@ body{
       }
     }
   }
-  hr{
-    position: inherit;
-    width: 93%;
-    padding:0px;
-  }
-
-}
-.paygo_benefits{
-  position: absolute;
-  top: 745px;
-  right: 10px;
-  width: 47%;
+  button{
+    cursor: pointer;
+    border-radius: 20px;
+    width: 40%;
+    padding: 10px; 
+    font-size: small;
+    
+   
+    &:not(:focus) {
+       background: linear-gradient(to right, #0735ce, #1abc9c); /* Set your color values */
+      color: white;
+      outline: none;
+    }
   
-  table {
-    position: relative;
-    border-collapse: collapse;
-    width: 93%;
+    &:focus {
+      background: linear-gradient(to right, #1abc9c, #0735ce);  /* Reverse the colors on hover */
+      color: white;
+      outline: none;
+   }
+   } 
+ }
+ .club_benefits{
+  position: absolute;
+  top: 44em;
+  left: 1em;
+  width: 39em;
+  line-height: 1.1em;
+  table{
+    border-collapse:separate;
     tr {
       &:nth-child(even) {
         background-color: rgba(108, 108, 108, 0.459); /* See-through grey background for even rows */
@@ -211,385 +157,480 @@ body{
 
       td {
         padding: 3px; 
-        border-radius: 5px;      
+        border-radius: 5px;          
       }
     }
   }
- 
-}
-.left_bottom_table{
-  position: relative;
-  top: 495px;
-  left: 3%;
-  width: 47%;
-  
-
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-   
-     
-    tr {
-       border-bottom: 10px solid black; // Lesser space between rows
-       
-      
-       &:last-child {
-         border-bottom: none; // Removes the border from the last row
-       }
-    }
-     
-    td {
-       padding: 5px; // Space inside each cell
-       border-radius: 10px;
-       text-align:left;
-       vertical-align: top; // Aligns the text to the top of the cell
-       background-color: rgba(108, 108, 108, 0.459);
-       border-right: 17px solid black;
-       
-       
-       img {
-         max-width: 80%; // Ensures images are responsive
-         height: auto;
-         margin-right: 7px; // Space between the image and text
-       }
-    }
-   }
-  }
-  
-.right_bottom_table{
+ }
+ .paygo_benefits{
   position: absolute;
-  top: 965px;
-  right: 1%;
-  width: 47%;
-
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-   
-     
+  top: 44em;
+  right: 1em;
+  width: 39em;
+  line-height: 1.1em;
+  table{
+    border-collapse:separate;
     tr {
-       border-bottom: 10px solid black; // Lesser space between rows
-       
-      
-       &:last-child {
-         border-bottom: none; // Removes the border from the last row
-       }
+      &:nth-child(even) {
+        background-color: rgba(108, 108, 108, 0.459); /* See-through grey background for even rows */
+        
+      }
+
+      td {
+        padding: 3px; 
+        border-radius: 5px;          
+      }
     }
-     
-    td {
-       padding: 5px; // Space inside each cell
-       border-radius: 10px;
-       text-align:left;
-       vertical-align: top; // Aligns the text to the top of the cell
-       background-color: rgba(108, 108, 108, 0.459);
-       border-right: 17px solid black;
-       
-       
-       img {
-         max-width: 80%; // Ensures images are responsive
-         height: auto;
-         margin-right: 7px; // Space between the image and text
-       }
-    }
-   }
   }
-  .terms{
-    position: absolute;
-    bottom: -100%; /* Adjust this value as needed */
+ }
+ .span_left{
+  position: absolute;
+  top: 60em;
+  left: 1em;
+ }
+ .span_right{
+position: absolute;
+top: 60em;
+  right: 30em;
+ }
+ .grid_container1{
+  position: absolute;
+  top:62em;
+  left: 1em;
+  max-width: 40em;
+  display: grid;
+  line-height: 1.2em;
+  grid-template-columns: auto auto auto;
+  
+}
+ .grid_container2{
+  position: absolute;
+  top:62em;
+  right: 1em;
+  max-width: 40em;
+  display: grid;
+  line-height: 1.2em;
+  grid-template-columns: auto auto auto;
+
+ }
+ .grid_item{
+  max-height: max-content;
+  border-radius: 0.5em;
+  background-color: rgba(108, 108, 108, 0.459);
+  border-bottom: 6px solid rgba(0, 0, 0, 0.8);
+  border-right: 12px solid rgba(0, 0, 0, 0.8);
+  p{
+    position: relative;
+    margin-top: 0;
+    padding-left: 6px;
+  }
+  
+  img {
+    position: relative;
+padding: 0;
+    max-width: 70%;
+    max-height: 60%;
+   
+  }
+
+ }
+ .footer{
+  position: absolute;
+  top: 100em;
+  left: 50em;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  min-width:auto;
+  text-align: center;
+ }
+ 
+ 
+ @media screen and (width >1441px) {
+  .main_container{
+    font-size:larger;
+  }
+  .top_text{
+    min-width: 60em;
+    top: 5em;
+    right: 20em;
+   }
+   .left_selection{
+    top:15em;
+    max-width: 60em;
+    left: 1em;
+   }
+   .right_selection{
+    top:15em;
+    max-width: 60em;
+    right: 1em;
+   }
+   .club_benefits{
+    top:38em;
+    max-width: 50em;
+    left:1em;
+   }
+   .paygo_benefits{
+    top:38em;
+    max-width: 50em;
+    right:21em;    
+   }
+   .span_left{
+    top:51em;
+    left:1em;
+    min-width: 10em;
+   }
+   .grid_container1{
+    top: 54em;
+    max-width: 56em;
+    left: 1em;
+   }
+   .span_right{
+    top:51em;
+    right:50em;
+    min-width: 10em;
+   }
+   .grid_container2{
+    top: 54em;
+    max-width: 56em;
+    right: 9em;
+   }
+   .footer{
+    top: 80em;
     left: 50%;
-    transform: translateX(-50%); /* Center the container horizontally */
-    width: auto; /* Adjust based on content width */
-    text-align: center; /* Center the text within the container */
-  }
-                            /*RESPONSIVENESS*/
-  /* 1. screen-width < 500px*/
-@media screen and (width< 600px) {
-  .main_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    gap: 1em;
-  }
-  .top_right_logo {
-    top: 5px;
-    right: 1px;
-    
-  }
-  #midright_text{
-    top: 10%;
-    left: 45%;
-    line-height: 0.9em;
-  }
-  .center_image {
-    left: 2%;
-    max-width: 60%;
-    margin-top: 5%;
-    
-  }
-  .center_text {
-    left: 5%;
-    max-width: 80%;
-  }
-  #button{
-    position:absolute;
-    top: -7em;
-    max-width: 40%;    
-  }
-  .left_selection {
-    left: 1%;
-    max-width: 50%;
-    font-size: 1em;
-    p, table{
-      margin: 10px 10px 10px 5px;
-      line-height: 15px;
-    }
-   
-  }
-  .right_selection {
-    right: 1%;
-    max-width: 50%;
-    font-size: 1em;
-    p, table{
-      margin: 10px 10px 10px 5px;
-      line-height: 15px;
-    }
-
-  }
-  .club_benefits{
-    left: 1%;
-    max-width: 50%;
-    font-size: 1em;
-  }
-  .paygo_benefits{
-    right: 1%;
-    max-width: 50%;
-    margin-top: -2em;
-    font-size: 1em;
-  }
-  .left_bottom_table{
-    left: 1%;
-    max-width: 50%;
-    font-size: 0.8em;
-            
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-   
-     
-    tr {
-       border-bottom: 5px solid black; // Lesser space between rows
-             
-       &:last-child {
-         border-bottom: none; // Removes the border from the last row
-       }
-    }
-     
-    td {
-       padding: 2px; // Space inside each cell
-       border-radius: 10px;
-       text-align:left;
-       vertical-align: top; // Aligns the text to the top of the cell
-       background-color: rgba(108, 108, 108, 0.459);
-       border-right: 10px solid black;
-       
-       
-       img {
-         max-width: 65%; // Ensures images are responsive
-         height: auto;
-         margin-right: 5px; // Space between the image and text
-       }
-    }
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    min-width: 25em;
    }
-  }
-  .right_bottom_table{
-    right: 1%;
-    max-width: 50%;
-    font-size: 0.8em;
-    margin-top: -2em;
-    table {
-      border-collapse: collapse;
-      border-spacing: 0;
-      width: 100%;
-     
-       
-      tr {
-         border-bottom: 5px solid black; // Lesser space between rows
-               
-         &:last-child {
-           border-bottom: none; // Removes the border from the last row
-         }
-      }
-       
-      td {
-         padding: 2px; // Space inside each cell
-         border-radius: 10px;
-         text-align:left;
-         vertical-align: top; // Aligns the text to the top of the cell
-         background-color: rgba(108, 108, 108, 0.459);
-         border-right: 10px solid black;
-         
-         
-         img {
-           max-width: 65%; // Ensures images are responsive
-           height: auto;
-           margin-right: 5px; // Space between the image and text
-         }
-      }
-     }
-
-  }
-  /* Adjust other styles for smaller screens */
+ }
+ @media screen and (width <1441px) {
+  .top_text{
+    min-width: 40em;
+    top: 5em;
+    right: 20em;
+   }
+   .left_selection{
+    top:15em;
+    max-width: 45em;
+    left: 1em;
+   }
+   .right_selection{
+    top:15em;
+    max-width: 45em;
+    right: 1em;
+   }
+   .club_benefits{
+    top:45em;
+    max-width: 45em;
+    left:1em;
+   }
+   .paygo_benefits{
+    top:45em;
+    max-width: 45em;
+    right:7em;    
+   }
+   .span_left{
+    top:61em;
+    left:1em;
+    min-width: 10em;
+   }
+   .grid_container1{
+    top: 64em;
+    max-width: 45em;
+    left: 1em;
+   }
+   .span_right{
+    top:61em;
+    right:36em;
+    min-width: 10em;
+   }
+   .grid_container2{
+    top: 64em;
+    max-width: 45em;
+    right: 1em;
+   }
+   .footer{
+    top: 98em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    min-width: 25em;
+   }
+ }
+ @media screen and (width <1200px) {
+  .top_text{
+    min-width: 25em;
+    top: 5em;
+    right: 2em;
+   }
+   .left_selection{
+    top:15em;
+    max-width: 37em;
+    left: 1em;
+   }
+   .right_selection{
+    top:15em;
+    max-width: 37em;
+    right: 1em;
+   }
+   .club_benefits{
+    top:45em;
+    max-width: 37em;
+    left:1em;
+   }
+   .paygo_benefits{
+    top:45em;
+    max-width: 37em;
+    right:1em;    
+   }
+   .span_left{
+    top:61em;
+    left:1em;
+    min-width: 10em;
+   }
+   .grid_container1{
+    top: 64em;
+    max-width: 37em;
+    left: 1em;
+   }
+   .span_right{
+    top:61em;
+    right:28em;
+    min-width: 10em;
+   }
+   .grid_container2{
+    top: 64em;
+    max-width: 37em;
+    right: 1em;
+   }
+   .footer{
+    top: 98em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    min-width: 25em;
+   }
+ }
+ @media screen and (width <1000px) {
+  .top_text{
+    min-width: 25em;
+    top: 5em;
+    right: 5em;
+   }
+   .left_selection{
+    top:15em;
+    max-width: 33em;
+    left: 1em;
+   }
+   .right_selection{
+    top:15em;
+    max-width: 33em;
+    right: 1em;
+   }
+   .club_benefits{
+    top:47em;
+    max-width: 33em;
+    left:1em;
+   }
+   .paygo_benefits{
+    top:47em;
+    max-width: 33em;
+    right:1em;    
+   }
+   .span_left{
+    top:62em;
+    left:1em;
+    min-width: 10em;
+   }
+   .grid_container1{
+    top: 64em;
+    max-width: 33em;
+    left: 1em;
+   }
+   .span_right{
+    top:62em;
+    right:24em;
+    min-width: 10em;
+   }
+   .grid_container2{
+    top: 64em;
+    max-width: 33em;
+    right: 1em;
+   }
+   .footer{
+    top: 100em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    min-width: 25em;
+   }
+ 
+}
+@media screen and (width <900px) {
+  .top_text{
+    min-width: 25em;
+    top: 5em;
+    right: 5em;
+   }
+   .left_selection{
+    top:15em;
+    max-width: 28em;
+    left: 1em;
+   }
+   .right_selection{
+    top:15em;
+    max-width: 28em;
+    right: 1em;
+   }
+   .club_benefits{
+    top:47em;
+    max-width: 28em;
+    left:1em;
+   }
+   .paygo_benefits{
+    top:47em;
+    max-width: 28em;
+    right:1em;    
+   }
+   .span_left{
+    top:62em;
+    left:1em;
+    min-width: 10em;
+   }
+   .grid_container1{
+    top: 64em;
+    max-width: 28em;
+    left: 1em;
+   }
+   .span_right{
+    top:62em;
+    right:18em;
+    min-width: 10em;
+   }
+   .grid_container2{
+    top: 64em;
+    max-width: 28em;
+    right: 1em;
+   }
+   .footer{
+    top: 103em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    min-width: 25em;
+   }
+ 
 }
 
-/*2. screen-width < 500px*/
-
-
-@media screen and (width< 500px) {
-  .main_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    gap: 1em;
-  }
-  .top_right_logo {
-    top: 5px;
-    right: 1px;
-    
-  }
-  #midright_text{
-    top: 10%;
-    left: 45%;
-    line-height: 0.9em;
-  }
-  .center_image {
-    left: 2%;
-    max-width: 60%;
-    margin-top: 5%;
-    
-  }
-  .center_text {
-    left: 5%;
-    max-width: 80%;
-  }
-  #button{
-    position:absolute;
-    top: -7em;
-    max-width: 40%;    
-  }
-  .left_selection {
-    left: 1%;
-    max-width: 50%;
-    font-size: 1em;
-    p, table{
-      margin: 10px 10px 10px 5px;
-      line-height: 15px;
-    }
-   
-  }
-  .right_selection {
-    right: 1%;
-    max-width: 50%;
-    font-size: 1em;
-    p, table{
-      margin: 10px 10px 10px 5px;
-      line-height: 15px;
-    }
-
-  }
-  .club_benefits{
-    left: 1%;
-    max-width: 50%;
-    font-size: 1em;
-  }
-  .paygo_benefits{
-    right: 1%;
-    max-width: 50%;
-    margin-top: -2em;
-    font-size: 1em;
-  }
-  .left_bottom_table{
-    left: 1%;
-    max-width: 50%;
-    font-size: 0.8em;
-            
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-   
-     
-    tr {
-       border-bottom: 5px solid black; // Lesser space between rows
-             
-       &:last-child {
-         border-bottom: none; // Removes the border from the last row
-       }
-    }
-     
-    td {
-       padding: 2px; // Space inside each cell
-       border-radius: 10px;
-       text-align:left;
-       vertical-align: top; // Aligns the text to the top of the cell
-       background-color: rgba(108, 108, 108, 0.459);
-       border-right: 10px solid black;
-       
-       
-       img {
-         max-width: 65%; // Ensures images are responsive
-         height: auto;
-         margin-right: 5px; // Space between the image and text
-       }
-    }
+@media only screen and (width< 600px) {
+  .top_text{
+    min-width: 15em;
+    top: 5em;
+    left: 23em;
    }
-  }
-  .right_bottom_table{
-    right: 1%;
-    max-width: 50%;
-    font-size: 0.8em;
-    margin-top: -2em;
-    table {
-      border-collapse: collapse;
-      border-spacing: 0;
-      width: 100%;
-     
-       
-      tr {
-         border-bottom: 5px solid black; // Lesser space between rows
-               
-         &:last-child {
-           border-bottom: none; // Removes the border from the last row
-         }
-      }
-       
-      td {
-         padding: 2px; // Space inside each cell
-         border-radius: 10px;
-         text-align:left;
-         vertical-align: top; // Aligns the text to the top of the cell
-         background-color: rgba(108, 108, 108, 0.459);
-         border-right: 10px solid black;
-         
-         
-         img {
-           max-width: 65%; // Ensures images are responsive
-           height: auto;
-           margin-right: 5px; // Space between the image and text
-         }
-      }
-     }
-
-  }
-  /* Adjust other styles for smaller screens */
+   .left_selection{
+    top:15em;
+    min-width: 35em;
+    left: 1em;
+   }
+   .right_selection{
+    top:45em;
+    min-width: 35em;
+    left: 1em;
+   }
+   .club_benefits{
+    top:75em;
+    max-width: 18em;
+    left:1em;
+   }
+   .paygo_benefits{
+    top:75em;
+    max-width: 18em;
+    left:19em;
+    
+   }
+   .span_left{
+    top:90em;
+    left:1em;
+    min-width: 10em;
+   }
+   
+   .grid_container1{
+    top: 92em;
+    min-width: 35em;
+    left: 1em;
+   }
+   .span_right{
+    top:125em;
+    left:1em;
+    min-width: 10em;
+   }
+   .grid_container2{
+    top: 127em;
+    min-width: 35em;
+    left: 1em;
+   }
+   .footer{
+    top: 143em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    min-width: 25em;
+   }
 }
 
-
+@media only screen and (width< 400px) {
+  .top_text{
+    min-width: 15em;
+    top: 5em;
+    left: 23em;
+   }
+   .left_selection{
+    top:15em;
+    min-width: 35em;
+    left: 1em;
+   }
+   .right_selection{
+    top:45em;
+    min-width: 35em;
+    left: 1em;
+   }
+   .club_benefits{
+    top:75em;
+    max-width: 18em;
+    left:1em;
+   }
+   .paygo_benefits{
+    top:75em;
+    max-width: 18em;
+    left:19em;
+    
+   }
+   .span_left{
+    top:90em;
+    left:1em;
+    min-width: 10em;
+   }
+   
+   .grid_container1{
+    top: 92em;
+    min-width: 35em;
+    left: 1em;
+   }
+   .span_right{
+    top:125em;
+    left:1em;
+    min-width: 10em;
+   }
+   .grid_container2{
+    top: 127em;
+    min-width: 35em;
+    left: 1em;
+   }
+   .footer{
+    top: 143em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    min-width: 25em;
+   }
+}
