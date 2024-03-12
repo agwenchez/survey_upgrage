@@ -11,8 +11,8 @@ const Conversion = () => {
         </div>
         <div className={styles.top_text}>
           <span>
-            Choose between the Club and PayGo account as
-            desired and enjoy more benefits
+            Choose between the Club and PayGo account as desired and enjoy more
+            benefits
           </span>
         </div>
         <div className={styles.swoosh}>
@@ -40,51 +40,51 @@ const Conversion = () => {
               </td>
             </tr>
             <tr>
+              <td>Monthly Fee</td>
+              <td>
+                <em>KSh 1000</em>
+              </td>
+            </tr>
+            <tr>
               <td>Ledger Fees</td>
               <td>
                 <em>Nil</em>
               </td>
             </tr>
             <tr>
-              <td>Debit Card</td>
+              <td>Transfer Within I&M</td>
               <td>
                 <em>Free</em>
               </td>
             </tr>
             <tr>
-              <td>Card Annual/Replacement Fee</td>
+              <td>Over the counter withdrawals</td>
               <td>
-                <em>Nil</em>
-              </td>
-            </tr>
-            <tr>
-              <td>Monthly Fee</td>
-              <td>
-                <em>1000/-</em>
-              </td>
-            </tr>
-            <tr>
-              <td>ATM Withdrawal Fee</td>
-              <td>
-                <em>Free ATM Usage(local and International)</em>
+                <em>Free</em>
               </td>
             </tr>
             <tr>
               <td>Pesalink/TT/RGTS</td>
               <td>
-                <em>Free on Mobile and Internet Banking</em>
+                <em>Free on Mobile & Internet Banking</em>
               </td>
             </tr>
             <tr>
-              <td>Internal Transfer</td>
+              <td>ATM withdrawal Fees</td>
               <td>
-                <em>Free</em>
+                <em>Free at all ATMs, both locally and internationally </em>
               </td>
             </tr>
             <tr>
-              <td>Internal Transfer</td>
+              <td>Bank to MPesa Transfer</td>
               <td>
-                <em>Free</em>
+                <em>Nil</em>
+              </td>
+            </tr>
+            <tr>
+              <td>Unsecured Personal Loan</td>
+              <td>
+                <em>Access upto 10M on qualification</em>
               </td>
             </tr>
           </table>
@@ -96,9 +96,10 @@ const Conversion = () => {
             <strong>PayGo Account</strong>
           </span>
           <p>
-            The I&M Club Account is your unrivaled gateway to a world of
-            priveledges that align with your lifestyle requirements, matched
-            with convenient banking services all just one monthly flat fee.
+            The PayGo Account offers you unparalleled flexibility and benefits
+            as you set about your financial goals. With no excessive fees to tie
+            you down you enjoy the piece of mind that comes with knowing you are
+            only charged for what you use.
           </p>
 
           <table>
@@ -109,51 +110,51 @@ const Conversion = () => {
               </td>
             </tr>
             <tr>
-              <td>Ledger Fees</td>
+              <td>Monthly Fees</td>
               <td>
                 <em>Nil</em>
               </td>
             </tr>
             <tr>
-              <td>Debit Card</td>
+              <td>Ledger Fees</td>
+              <td>
+                <em>KSh 30.(for non chanel debit)</em>
+              </td>
+            </tr>
+            <tr>
+              <td>Transfer Within I&M</td>
               <td>
                 <em>Free</em>
               </td>
             </tr>
             <tr>
-              <td>Card Annual/Replacement Fee</td>
+              <td>Transfer Within I&M</td>
               <td>
-                <em>Nil</em>
-              </td>
-            </tr>
-            <tr>
-              <td>Monthly Fee</td>
-              <td>
-                <em>1000/-</em>
-              </td>
-            </tr>
-            <tr>
-              <td>ATM Withdrawal Fee</td>
-              <td>
-                <em>Free ATM Usage(local and International)</em>
+                <em>KSh 250</em>
               </td>
             </tr>
             <tr>
               <td>Pesalink/TT/RGTS</td>
               <td>
-                <em>Free on Mobile and Internet Banking</em>
+                <em>As per the general tariff</em>
               </td>
             </tr>
             <tr>
-              <td>Internal Transfer</td>
+              <td>ATM withdrawal Fees</td>
               <td>
-                <em>Free</em>
+                <em>KSh 30 at I&M ATMs, KSH 50 at other ATMs</em>
               </td>
             </tr>
             <tr>
-              <td>Internal Transfer</td>
+              <td>Bank to MPesa Transfer</td>
               <td>
-                <em>Free</em>
+                <em>Nil</em>
+              </td>
+            </tr>
+            <tr>
+              <td>Unsecured Personal Loan</td>
+              <td>
+                <em>Access upto 10M on qualification</em>
               </td>
             </tr>
           </table>
@@ -261,49 +262,52 @@ const Conversion = () => {
           <hr />
         </div>
         <span className={styles.span_left}>
-            <strong>More Club Benefits</strong>
-          </span>
-        <div className={styles.grid_container1}>       
+          <strong>More Club Benefits</strong>
+        </span>
+        <div className={styles.grid_container1}>
           <div className={styles.grid_item}>
-            <img src="/images/card.png" alt="CardImage" />
+            <img src="/images/book.png" alt="CardImage" />
 
+            <p>
+              Access to Select Banking centers for the state of the art banking
+              experience on qualification
+            </p>
+          </div>
+          <div className={styles.grid_item}>
+            <img src="/images/overdraft.png" alt="AmrefPlaneImage" />
+            <p>OverDraft Available</p>
+          </div>
+          <div className={styles.grid_item}>
+            <img src="/images/relationship.png" alt="NetworkingImage" />
+            <p>Access To Dedicated relationship Managers</p>
+          </div>
+          <div className={styles.grid_item}>
+            <img src="/images/card.png" alt="InstructionImage" />
             <p>Free Debit Card</p>
           </div>
           <div className={styles.grid_item}>
-            <img src="/images/plane.png" alt="AmrefPlaneImage" />
-            <p>Free AMREF Maisha Bronze Cover</p>
+            <img src="/images/plane.png" alt="SMSNotificationImage" />
+            <p>Free Amref Maisha Bronze</p>
           </div>
           <div className={styles.grid_item}>
-            <img src="/images/networking.png" alt="NetworkingImage" />
-            <p>Access To Professional Networking Forums</p>
+            <img src="/images/networking.png" alt="RewardsImage" />
+            <p>Access To profesional networking forums</p>
           </div>
           <div className={styles.grid_item}>
-            <img src="/images/instructions.png" alt="InstructionImage" />
-            <p>Free Standing Instruction Setup</p>
+            <img src="/images/instructions.png" alt="ATMCardImage" />
+            <p>Free Standing Instruction forums</p>
           </div>
           <div className={styles.grid_item}>
-            <img src="/images/sms.png" alt="SMSNotificationImage" />
-            <p>Free SMS Notification</p>
+            <img src="/images/sms.png" alt="CardImage" />
+            <p>Free SMS notification</p>
           </div>
           <div className={styles.grid_item}>
-            <img src="/images/rewards.png" alt="RewardsImage" />
-            <p>Rewards And Personalised offers</p>
+            <img src="/images/rewards.png" alt="CardImage" />
+            <p>Rewards On Personalised Offers</p>
           </div>
           <div className={styles.grid_item}>
-            <img src="/images/atm.png" alt="ATMCardImage" />
-            <p>Free ATM Usage(local and International)</p>
-          </div>
-          <div className={styles.grid_item}>
-            <img src="/images/card.png" alt="CardImage" />
-            <p>Free Debit Card</p>
-          </div>
-          <div className={styles.grid_item}>
-            <img src="/images/card.png" alt="CardImage" />
-            <p>Free Debit Card</p>
-          </div>
-          <div className={styles.grid_item}>
-            <img src="/images/card.png" alt="CardImage" />
-            <p>Free Debit Card</p>
+            <img src="/images/atm.png" alt="CardImage" />
+            <p>Free ATM usage (local and International)</p>
           </div>
           <div className={styles.grid_item}>
             <img src="/images/loan.png" alt="LoanImage" />
@@ -311,8 +315,8 @@ const Conversion = () => {
           </div>
         </div>
         <span className={styles.span_right}>
-            <strong>More PayGo Benefits</strong>
-          </span>
+          <strong>More PayGo Benefits</strong>
+        </span>
         <div className={styles.grid_container2}>
           <div className={styles.grid_item}>
             <img src="/images/card.png" alt="CardImage" />
