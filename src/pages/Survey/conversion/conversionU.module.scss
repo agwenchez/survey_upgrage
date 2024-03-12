@@ -4,7 +4,8 @@
   background-color: black;
   color: white;
   overflow-y: scroll;
-  font-size: small; 
+  font-size:small;
+  font-weight: 500; 
   margin: 0;
   padding: 0;
  }
@@ -49,13 +50,12 @@
   background-size: cover;
   top: 15em;
   left: 1em;
-  max-height: 32em;
   max-width: 47%;
   border: 0.1px solid grey;
   border-radius: 17px;
   p, table, button, span{
     margin: 10px 10px 10px 10px;
-    line-height: 1.1em;
+    line-height: 1.5em;
   }
   table{
     width: 90%;
@@ -100,13 +100,13 @@
   background-size: cover;
   top: 15em;
   right: 1em;
-  max-height: 32em;
+
   max-width: 47%;
   border: 0.1px solid grey;
   border-radius: 17px;
   p, table, button, span{
     margin: 10px 10px 10px 10px;
-    line-height: 1.1em;
+    line-height: 1.5em;
   }
   table{
     width: 90%;
@@ -149,7 +149,7 @@
   top: 44em;
   left: 1em;
   min-width: 47%;
-  line-height: 1.1em;
+  line-height: 1.5em;
   table{
     min-width: 90%;
     border-collapse:separate;
@@ -171,7 +171,7 @@
   top: 44em;
   right: 1em;
   min-width: 47%;
-  line-height: 1.1em;
+  line-height: 1.5em;
   table{
     min-width: 90%;
     border-collapse:separate;
@@ -204,7 +204,7 @@ top: 60em;
   left: 1em;
   min-width: 47%;
   display: grid;
-  line-height: 1.1em;
+  line-height: 1.5em;
   grid-template-columns: auto auto auto;
   
 }
@@ -214,7 +214,7 @@ top: 60em;
   right: 1em;
   min-width: 47%;
   display: grid;
-  line-height: 1.1em;
+  line-height: 1.5em;
   grid-template-columns: auto auto auto;
 
  }
@@ -251,10 +251,13 @@ top: 60em;
  
  // RESPONSIVENESS //
  @media screen and (width >1300px) {
+  .main_container{
+    font-size: larger;
+  }
   .top_text{
-    max-width: 50%;
+    max-width: 55%;
     top: 5em;
-    right: 2em;
+    right: 7em;
    }
    .left_selection{
     top:15em;
@@ -277,27 +280,27 @@ top: 60em;
     right:1em;    
    }
    .span_left{
-    top:63em;
+    top:65em;
     left:1em;
     min-width: 10em;
    }
    .grid_container1{
-    top: 65em;
+    top: 67em;
     max-width: 47%;
     left: 1em;
    }
    .span_right{
-    top:63em;
+    top:65em;
     right:1em;
     min-width: 47%;
    }
    .grid_container2{
-    top: 65em;
+    top: 67em;
     max-width: 47%;
     right: 1em;
    }
    .footer{
-    top: 107em;
+    top: 104em;
     left: 50%;
     transform: translate(-50%, -50%);
     bottom: 0;
@@ -308,7 +311,7 @@ top: 60em;
   .top_text{
     max-width: 50%;
     top: 5em;
-    right: 2em;
+    right: 7em;
    }
    .left_selection{
     top:15em;
@@ -321,37 +324,37 @@ top: 60em;
     right: 1em;
    }
    .club_benefits{
-    top:48em;
+    top:52em;
     max-width: 47%;
     left:1em;
    }
    .paygo_benefits{
-    top:48em;
+    top:52em;
     max-width: 47%;
     right:1em;    
    }
    .span_left{
-    top:63em;
+    top:71em;
     left:1em;
     min-width: 10em;
    }
    .grid_container1{
-    top: 65em;
+    top: 73em;
     max-width: 47%;
     left: 1em;
    }
    .span_right{
-    top:63em;
+    top:71em;
     right:1em;
     min-width: 47%;
    }
    .grid_container2{
-    top: 65em;
+    top: 73em;
     max-width: 47%;
     right: 1em;
    }
    .footer{
-    top: 107em;
+    top: 114em;
     left: 50%;
     transform: translate(-50%, -50%);
     bottom: 0;
@@ -375,37 +378,37 @@ top: 60em;
     right: 1em;
    }
    .club_benefits{
-    top:48em;
+    top:60em;
     max-width: 47%;
     left:1em;
    }
    .paygo_benefits{
-    top:48em;
+    top:60em;
     max-width: 47%;
     right:1em;    
    }
    .span_left{
-    top:63em;
+    top:80em;
     left:1em;
     min-width: 10em;
    }
    .grid_container1{
-    top: 65em;
+    top: 82em;
     max-width: 47%;
     left: 1em;
    }
    .span_right{
-    top:63em;
+    top:80em;
     right:1em;
     min-width: 47%;
    }
    .grid_container2{
-    top: 65em;
+    top: 82em;
     max-width: 47%;
     right: 1em;
    }
    .footer{
-    top: 107em;
+    top: 132em;
     left: 50%;
     transform: translate(-50%, -50%);
     bottom: 0;
@@ -425,51 +428,50 @@ top: 60em;
       left: 3em;
      }
      .right_selection{
-      top:45em;
+      top:53em;
       min-width: 35em;
       left: 3em;
      }
      .club_benefits{
-      top:75em;
+      top:90em;
       min-width: 18em;
       left:3em;
      }
      .paygo_benefits{
-      top:75em;
+      top:90em;
       min-width: 18em;
       left:21em;
       
      }
      .span_left{
-      top:90em;
+      top:109em;
       left:3em;
       min-width: 10em;
      }
      
      .grid_container1{
-      top: 92em;
+      top: 111em;
       min-width: 35em;
       left: 3em;
      }
      .span_right{
-      top:125em;
+      top:152em;
       left:3em;
       min-width: 10em;
      }
      .grid_container2{
-      top: 127em;
+      top: 154em;
       min-width: 35em;
       left: 3em;
      }
      .footer{
-      top: 143em;
+      top: 170em;
       left: 50%;
       transform: translate(-50%, -50%);
       bottom: 0;
       min-width: 25em;
      }
 }
-
 @media only screen and (width< 400px) {
   .top_text{
     max-width: 15%;
@@ -482,44 +484,43 @@ top: 60em;
     left: 1em;
    }
    .right_selection{
-    top:45em;
+    top:53em;
     max-width: 50%;
     left: 1em;
    }
    .club_benefits{
-    top:75em;
+    top:90em;
     min-width: 18em;
     left:1em;
    }
    .paygo_benefits{
-    top:75em;
+    top:90em;
     min-width: 18em;
     left:19em;
     
    }
    .span_left{
-    top:90em;
+    top:109em;
     left:1em;
     max-width: 50%;
    }
-   
    .grid_container1{
-    top: 92em;
+    top: 112em;
     max-width: 50%;
     left: 1em;
    }
    .span_right{
-    top:125em;
+    top:153em;
     left:1em;
     max-width: 10%;
    }
    .grid_container2{
-    top: 127em;
+    top: 155em;
     max-width: 50%;
     left: 1em;
    }
    .footer{
-    top: 143em;
+    top: 172em;
     left: 19em;
     transform: translate(-50%, -50%);
     bottom: 0;

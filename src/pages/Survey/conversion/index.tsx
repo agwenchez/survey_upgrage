@@ -98,8 +98,7 @@ const Conversion = () => {
           <p>
             The PayGo Account offers you unparalleled flexibility and benefits
             as you set about your financial goals. With no excessive fees to tie
-            you down you enjoy the piece of mind that comes with knowing you are
-            only charged for what you use.
+            you down you enjoy the piece of mind that comes with.
           </p>
 
           <table>
