@@ -50,7 +50,7 @@
   top: 15em;
   left: 1em;
   max-height: 32em;
-  min-width: 47%;
+  max-width: 47%;
   border: 0.1px solid grey;
   border-radius: 17px;
   p, table, button, span{
@@ -58,16 +58,19 @@
     line-height: 1.1em;
   }
   table{
+    width: 90%;
     border-collapse:separate;
     tr {
+      
       &:nth-child(even) {
-        background-color: rgba(113, 110, 110, 0.715);         
+                background-color: rgba(113, 110, 110, 0.715);         
       }
 
       td {
         padding: 3px; 
         border-radius: 5px;          
       }
+      
     }
   }
   button{
@@ -98,7 +101,7 @@
   top: 15em;
   right: 1em;
   max-height: 32em;
-  min-width: 47%;
+  max-width: 47%;
   border: 0.1px solid grey;
   border-radius: 17px;
   p, table, button, span{
@@ -106,6 +109,7 @@
     line-height: 1.1em;
   }
   table{
+    width: 90%;
     border-collapse:separate;
     tr {
       &:nth-child(even) {
@@ -147,7 +151,7 @@
   min-width: 47%;
   line-height: 1.1em;
   table{
-    
+    min-width: 90%;
     border-collapse:separate;
     tr {
       &:nth-child(even) {
@@ -169,6 +173,7 @@
   min-width: 47%;
   line-height: 1.1em;
   table{
+    min-width: 90%;
     border-collapse:separate;
     tr {
       &:nth-child(even) {
@@ -417,44 +422,44 @@ top: 60em;
      .left_selection{
       top:15em;
       min-width: 35em;
-      left: 9em;
+      left: 3em;
      }
      .right_selection{
       top:45em;
       min-width: 35em;
-      left: 9em;
+      left: 3em;
      }
      .club_benefits{
       top:75em;
-      max-width: 18em;
-      left:9em;
+      min-width: 18em;
+      left:3em;
      }
      .paygo_benefits{
       top:75em;
-      max-width: 18em;
-      left:27em;
+      min-width: 18em;
+      left:21em;
       
      }
      .span_left{
       top:90em;
-      left:9em;
+      left:3em;
       min-width: 10em;
      }
      
      .grid_container1{
       top: 92em;
       min-width: 35em;
-      left: 9em;
+      left: 3em;
      }
      .span_right{
       top:125em;
-      left:9em;
+      left:3em;
       min-width: 10em;
      }
      .grid_container2{
       top: 127em;
       min-width: 35em;
-      left: 9em;
+      left: 3em;
      }
      .footer{
       top: 143em;
@@ -483,12 +488,12 @@ top: 60em;
    }
    .club_benefits{
     top:75em;
-    max-width: 18em;
+    min-width: 18em;
     left:1em;
    }
    .paygo_benefits{
     top:75em;
-    max-width: 18em;
+    min-width: 18em;
     left:19em;
     
    }
