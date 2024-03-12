@@ -23,9 +23,9 @@ const Conversion = () => {
           </span>
         </div>
         <div className={styles.left_selection}>
-          <span>
+          <p>
             <strong>Club Account</strong>
-          </span>
+          </p>
           <p>
             The I&M Club Account is your unrivaled gateway to a world of
             priveledges that align with your lifestyle requirements, matched
@@ -92,9 +92,9 @@ const Conversion = () => {
           <button type="button">Upgrade Now</button>
         </div>
         <div className={styles.right_selection}>
-          <span>
+          <p>
             <strong>PayGo Account</strong>
-          </span>
+          </p>
           <p>
             The PayGo Account offers you unparalleled flexibility and benefits
             as you set about your financial goals. With no excessive fees to tie
