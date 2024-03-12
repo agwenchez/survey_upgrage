@@ -50,7 +50,7 @@
   top: 15em;
   left: 1em;
   max-height: 32em;
-  max-width: 45em;
+  min-width: 47%;
   border: 0.1px solid grey;
   border-radius: 17px;
   p, table, button, span{
@@ -98,7 +98,7 @@
   top: 15em;
   right: 1em;
   max-height: 32em;
-  max-width: 45em;
+  min-width: 47%;
   border: 0.1px solid grey;
   border-radius: 17px;
   p, table, button, span{
@@ -144,7 +144,7 @@
   position: absolute;
   top: 44em;
   left: 1em;
-  width: 39em;
+  min-width: 47%;
   line-height: 1.1em;
   table{
     
@@ -166,7 +166,7 @@
   position: absolute;
   top: 44em;
   right: 1em;
-  width: 39em;
+  min-width: 47%;
   line-height: 1.1em;
   table{
     border-collapse:separate;
@@ -197,7 +197,7 @@ top: 60em;
   position: absolute;
   top:62em;
   left: 1em;
-  max-width: 40em;
+  min-width: 47%;
   display: grid;
   line-height: 1.1em;
   grid-template-columns: auto auto auto;
@@ -207,7 +207,7 @@ top: 60em;
   position: absolute;
   top:62em;
   right: 1em;
-  max-width: 40em;
+  min-width: 47%;
   display: grid;
   line-height: 1.1em;
   grid-template-columns: auto auto auto;
@@ -244,165 +244,109 @@ top: 60em;
   text-align: center;
  }
  
- @media screen and (width >1441px) {
-  .main_container{
-    font-size:larger;
-  }
+ // RESPONSIVENESS //
+ @media screen and (width >1300px) {
   .top_text{
-    min-width: 60em;
-    top: 5em;
-    right: 20em;
-   }
-   .left_selection{
-    top:15em;
-    max-width: 60em;
-    left: 1em;
-   }
-   .right_selection{
-    top:15em;
-    max-width: 60em;
-    right: 1em;
-   }
-   .club_benefits{
-    top:38em;
-    max-width: 50em;
-    left:1em;
-   }
-   .paygo_benefits{
-    top:38em;
-    max-width: 50em;
-    right:21em;    
-   }
-   .span_left{
-    top:51em;
-    left:1em;
-    min-width: 10em;
-   }
-   .grid_container1{
-    top: 54em;
-    max-width: 56em;
-    left: 1em;
-   }
-   .span_right{
-    top:51em;
-    right:50em;
-    min-width: 10em;
-   }
-   .grid_container2{
-    top: 54em;
-    max-width: 56em;
-    right: 9em;
-   }
-   .footer{
-    top: 80em;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    bottom: 0;
-    min-width: 25em;
-   }
- }
- @media screen and (width <1441px) {
-  .top_text{
-    min-width: 40em;
-    top: 5em;
-    right: 20em;
-   }
-   .left_selection{
-    top:15em;
-    max-width: 45em;
-    left: 1em;
-   }
-   .right_selection{
-    top:15em;
-    max-width: 45em;
-    right: 1em;
-   }
-   .club_benefits{
-    top:45em;
-    max-width: 45em;
-    left:1em;
-   }
-   .paygo_benefits{
-    top:45em;
-    max-width: 45em;
-    right:7em;    
-   }
-   .span_left{
-    top:61em;
-    left:1em;
-    min-width: 10em;
-   }
-   .grid_container1{
-    top: 64em;
-    max-width: 45em;
-    left: 1em;
-   }
-   .span_right{
-    top:61em;
-    right:36em;
-    min-width: 10em;
-   }
-   .grid_container2{
-    top: 64em;
-    max-width: 45em;
-    right: 1em;
-   }
-   .footer{
-    top: 98em;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    bottom: 0;
-    min-width: 25em;
-   }
- }
- @media screen and (width <1200px) {
-  .top_text{
-    min-width: 25em;
+    max-width: 50%;
     top: 5em;
     right: 2em;
    }
    .left_selection{
     top:15em;
-    max-width: 37em;
+    max-width: 47%;
     left: 1em;
    }
    .right_selection{
     top:15em;
-    max-width: 37em;
+    max-width: 47%;
     right: 1em;
    }
    .club_benefits{
-    top:45em;
-    max-width: 37em;
+    top:48em;
+    max-width: 47%;
     left:1em;
    }
    .paygo_benefits{
-    top:45em;
-    max-width: 37em;
+    top:48em;
+    max-width: 47%;
     right:1em;    
    }
    .span_left{
-    top:61em;
+    top:63em;
     left:1em;
     min-width: 10em;
    }
    .grid_container1{
-    top: 64em;
-    max-width: 37em;
+    top: 65em;
+    max-width: 47%;
     left: 1em;
    }
    .span_right{
-    top:61em;
-    right:28em;
-    min-width: 10em;
+    top:63em;
+    right:1em;
+    min-width: 47%;
    }
    .grid_container2{
-    top: 64em;
-    max-width: 37em;
+    top: 65em;
+    max-width: 47%;
     right: 1em;
    }
    .footer{
-    top: 98em;
+    top: 107em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    min-width: 25em;
+   }
+ }
+ @media screen and (width <1300px) {
+  .top_text{
+    max-width: 50%;
+    top: 5em;
+    right: 2em;
+   }
+   .left_selection{
+    top:15em;
+    max-width: 47%;
+    left: 1em;
+   }
+   .right_selection{
+    top:15em;
+    max-width: 47%;
+    right: 1em;
+   }
+   .club_benefits{
+    top:48em;
+    max-width: 47%;
+    left:1em;
+   }
+   .paygo_benefits{
+    top:48em;
+    max-width: 47%;
+    right:1em;    
+   }
+   .span_left{
+    top:63em;
+    left:1em;
+    min-width: 10em;
+   }
+   .grid_container1{
+    top: 65em;
+    max-width: 47%;
+    left: 1em;
+   }
+   .span_right{
+    top:63em;
+    right:1em;
+    min-width: 47%;
+   }
+   .grid_container2{
+    top: 65em;
+    max-width: 47%;
+    right: 1em;
+   }
+   .footer{
+    top: 107em;
     left: 50%;
     transform: translate(-50%, -50%);
     bottom: 0;
@@ -411,52 +355,52 @@ top: 60em;
  }
  @media screen and (width <1000px) {
   .top_text{
-    min-width: 25em;
+    max-width: 50%;
     top: 5em;
-    right: 5em;
+    right: 2em;
    }
    .left_selection{
     top:15em;
-    max-width: 33em;
+    max-width: 47%;
     left: 1em;
    }
    .right_selection{
     top:15em;
-    max-width: 33em;
+    max-width: 47%;
     right: 1em;
    }
    .club_benefits{
-    top:47em;
-    max-width: 33em;
+    top:48em;
+    max-width: 47%;
     left:1em;
    }
    .paygo_benefits{
-    top:47em;
-    max-width: 33em;
+    top:48em;
+    max-width: 47%;
     right:1em;    
    }
    .span_left{
-    top:62em;
+    top:63em;
     left:1em;
     min-width: 10em;
    }
    .grid_container1{
-    top: 64em;
-    max-width: 33em;
+    top: 65em;
+    max-width: 47%;
     left: 1em;
    }
    .span_right{
-    top:62em;
-    right:24em;
-    min-width: 10em;
+    top:63em;
+    right:1em;
+    min-width: 47%;
    }
    .grid_container2{
-    top: 64em;
-    max-width: 33em;
+    top: 65em;
+    max-width: 47%;
     right: 1em;
    }
    .footer{
-    top: 100em;
+    top: 107em;
     left: 50%;
     transform: translate(-50%, -50%);
     bottom: 0;
@@ -464,62 +408,6 @@ top: 60em;
    }
  
 }
-@media screen and (width <900px) {
-  .top_text{
-    min-width: 26em;
-    top: 5em;
-    right: 5em;
-   }
-   .left_selection{
-    top:15em;
-    max-width: 26em;
-    left: 1em;
-   }
-   .right_selection{
-    top:15em;
-    max-width: 26em;
-    right: 1em;
-   }
-   .club_benefits{
-    top:47em;
-    max-width: 26em;
-    left:1em;
-   }
-   .paygo_benefits{
-    top:47em;
-    max-width: 26em;
-    right:1em;    
-   }
-   .span_left{
-    top:62em;
-    left:1em;
-    min-width: 10em;
-   }
-   .grid_container1{
-    top: 64em;
-    max-width: 26em;
-    left: 1em;
-   }
-   .span_right{
-    top:62em;
-    right:18em;
-    min-width: 10em;
-   }
-   .grid_container2{
-    top: 64em;
-    max-width: 26em;
-    right: 1em;
-   }
-   .footer{
-    top: 103em;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    bottom: 0;
-    min-width: 25em;
-   }
- 
-}
-
 @media only screen and (width<700px) {
     .top_text{
       min-width: 15em;
@@ -579,18 +467,18 @@ top: 60em;
 
 @media only screen and (width< 400px) {
   .top_text{
-    min-width: 15em;
+    max-width: 15%;
     top: 5em;
     left: 23em;
    }
    .left_selection{
     top:15em;
-    min-width: 35em;
+    max-width: 50%;
     left: 1em;
    }
    .right_selection{
     top:45em;
-    min-width: 35em;
+    max-width: 50%;
     left: 1em;
    }
    .club_benefits{
@@ -607,22 +495,22 @@ top: 60em;
    .span_left{
     top:90em;
     left:1em;
-    min-width: 10em;
+    max-width: 50%;
    }
    
    .grid_container1{
     top: 92em;
-    min-width: 35em;
+    max-width: 50%;
     left: 1em;
    }
    .span_right{
     top:125em;
     left:1em;
-    min-width: 10em;
+    max-width: 10%;
    }
    .grid_container2{
     top: 127em;
-    min-width: 35em;
+    max-width: 50%;
     left: 1em;
    }
    .footer{
