@@ -206,6 +206,7 @@ top: 60em;
   right: 30em;
  }
  .grid_container1{
+  background-color: transparent;
   position: absolute;
   top:62em;
   left: 1em;
@@ -216,6 +217,7 @@ top: 60em;
   
 }
  .grid_container2{
+  background-color: transparent;
   position: absolute;
   top:62em;
   right: 1em;
@@ -223,25 +225,30 @@ top: 60em;
   display: grid;
   line-height: 1.5em;
   grid-template-columns: auto auto auto;
+  
 
  }
  .grid_item{
+  font-size: 200;
+  line-height: 1.2em;
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: left;
   max-height: max-content;
   border-radius: 0.5em;
   background-color: rgba(113, 110, 110, 0.473); 
-  border-bottom: 6px solid rgba(0, 0, 0, 0.8);
+  border-bottom: 7px solid rgba(0, 0, 0, 0.8);
   border-right: 10px solid rgba(0, 0, 0, 0.8);
   p{
     position: relative;
-    margin-top: 0;
-    padding-left: 6px;
-  }
+    padding: 0px 1px  ;
+   }
   
   img {
     position: relative;
-    padding: 0;
-    max-width: 70%;
-    max-height: 60%;
+    padding: 5px 0px 0px 1px;
+    max-width: 3em;
+    max-height: 3em;
    
   }
 

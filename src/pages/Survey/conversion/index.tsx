@@ -266,7 +266,6 @@ const Conversion = () => {
         <div className={styles.grid_container1}>
           <div className={styles.grid_item}>
             <img src="/images/book.png" alt="CardImage" />
-
             <p>
               Access to Select Banking centers for the state of the art banking
               experience on qualification
@@ -286,7 +285,7 @@ const Conversion = () => {
           </div>
           <div className={styles.grid_item}>
             <img src="/images/plane.png" alt="SMSNotificationImage" />
-            <p>Free Amref Maisha Bronze</p>
+            <p>Free AMREF Maisha Bronze</p>
           </div>
           <div className={styles.grid_item}>
             <img src="/images/networking.png" alt="RewardsImage" />
