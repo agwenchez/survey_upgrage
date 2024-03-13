@@ -13,9 +13,9 @@
   margin-bottom: 10px;
  }
  .top_right_logo{
-  position: absolute;
+  position:absolute;
+  top:0.5em;
   right: 1em;
-  z-index: 1;
  }
  .top_text{
   position: absolute;
@@ -241,14 +241,14 @@ top: 60em;
   border-right: 10px solid rgba(0, 0, 0, 0.8);
   p{
     position: relative;
-    padding: 0px 1px;
+    padding: 0px 3px;
    }
   
   img {
     position: relative;
-    padding: 5px 0px 0px 0.8px;
-    max-width: 3em;
-    max-height: 3em;
+    padding: 5px 1px 0px 0.8px;
+    width: 2.5em;
+    height: 2.5em;
    
   }
 
@@ -431,6 +431,9 @@ top: 60em;
  
 }
 @media only screen and (width<700px) {
+  .top_right_logo{
+    left: 105%;
+  }
     .top_text{
       min-width: 15em;
       top: 5em;
@@ -487,6 +490,9 @@ top: 60em;
      }
 }
 @media only screen and (width< 400px) {
+  .top_right_logo{
+    left: 105%;
+  }
   .top_text{
     max-width: 15%;
     top: 5em;
