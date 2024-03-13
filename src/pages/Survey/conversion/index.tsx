@@ -1,4 +1,4 @@
-import styles from "./conversionU.module.scss";
+import styles from "./conversion.module.scss";
 
 const Conversion = () => {
   return (
