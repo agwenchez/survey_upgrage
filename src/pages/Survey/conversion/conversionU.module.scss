@@ -26,12 +26,12 @@
  .swoosh{
   position: absolute;
   left: 1em;
-  max-width: 20em;
+  max-width: 30em;
   top: 2em;
   img{
     position: fixed;
     max-width: 50em;
-    max-height: 50em;
+    max-height: 45em;
   }
   span{
     position: relative;
@@ -241,12 +241,12 @@ top: 60em;
   border-right: 10px solid rgba(0, 0, 0, 0.8);
   p{
     position: relative;
-    padding: 0px 1px  ;
+    padding: 0px 1px;
    }
   
   img {
     position: relative;
-    padding: 5px 0px 0px 1px;
+    padding: 5px 0px 0px 0.8px;
     max-width: 3em;
     max-height: 3em;
    
@@ -284,37 +284,37 @@ top: 60em;
     right: 1em;
    }
    .club_benefits{
-    top:48em;
+    top:50em;
     max-width: 47%;
     left:1em;
    }
    .paygo_benefits{
-    top:48em;
+    top:50em;
     max-width: 47%;
     right:1em;    
    }
    .span_left{
-    top:65em;
+    top:67em;
     left:1em;
     min-width: 10em;
    }
    .grid_container1{
-    top: 67em;
+    top: 69em;
     max-width: 47%;
     left: 1em;
    }
    .span_right{
-    top:65em;
+    top:67em;
     right:1em;
     min-width: 47%;
    }
    .grid_container2{
-    top: 67em;
+    top: 69em;
     max-width: 47%;
     right: 1em;
    }
    .footer{
-    top: 107em;
+    top: 104em;
     left: 50%;
     transform: translate(-50%, -50%);
     bottom: 0;
@@ -338,37 +338,37 @@ top: 60em;
     right: 1em;
    }
    .club_benefits{
-    top:52em;
+    top:54em;
     max-width: 47%;
     left:1em;
    }
    .paygo_benefits{
-    top:52em;
+    top:54em;
     max-width: 47%;
     right:1em;    
    }
    .span_left{
-    top:71em;
+    top:73em;
     left:1em;
     min-width: 10em;
    }
    .grid_container1{
-    top: 73em;
+    top: 75em;
     max-width: 47%;
     left: 1em;
    }
    .span_right{
-    top:71em;
+    top:73em;
     right:1em;
     min-width: 47%;
    }
    .grid_container2{
-    top: 73em;
+    top: 75em;
     max-width: 47%;
     right: 1em;
    }
    .footer{
-    top: 114em;
+    top: 106em;
     left: 50%;
     transform: translate(-50%, -50%);
     bottom: 0;
@@ -402,27 +402,27 @@ top: 60em;
     right:1em;    
    }
    .span_left{
-    top:80em;
+    top:79em;
     left:1em;
     min-width: 10em;
    }
    .grid_container1{
-    top: 82em;
+    top: 81em;
     max-width: 47%;
-    left: 1em;
+    left: 0.4em;
    }
    .span_right{
-    top:80em;
-    right:1em;
+    top:79em;
+    right:0.4em;
     min-width: 47%;
    }
    .grid_container2{
-    top: 82em;
+    top: 81em;
     max-width: 47%;
-    right: 1em;
+    right: 0.4em;
    }
    .footer{
-    top: 132em;
+    top: 122em;
     left: 50%;
     transform: translate(-50%, -50%);
     bottom: 0;
@@ -447,39 +447,39 @@ top: 60em;
       left: 3em;
      }
      .club_benefits{
-      top:90em;
+      top:92em;
       min-width: 18em;
       left:3em;
      }
      .paygo_benefits{
-      top:90em;
+      top:92em;
       min-width: 18em;
       left:21em;
       
      }
      .span_left{
-      top:109em;
+      top:111em;
       left:3em;
       min-width: 10em;
      }
      
      .grid_container1{
-      top: 111em;
+      top: 113em;
       min-width: 35em;
       left: 3em;
      }
      .span_right{
-      top:152em;
+      top:146em;
       left:3em;
       min-width: 10em;
      }
      .grid_container2{
-      top: 154em;
+      top: 148em;
       min-width: 35em;
       left: 3em;
      }
      .footer{
-      top: 170em;
+      top: 163em;
       left: 50%;
       transform: translate(-50%, -50%);
       bottom: 0;
@@ -492,6 +492,7 @@ top: 60em;
     top: 5em;
     left: 24em;
    }
+   
    .left_selection{
     top:15em;
     max-width: 50%;
@@ -503,38 +504,38 @@ top: 60em;
     left: 1em;
    }
    .club_benefits{
-    top:90em;
+    top:92em;
     min-width: 18em;
     left:1em;
    }
    .paygo_benefits{
-    top:90em;
+    top:92em;
     min-width: 18em;
     left:19em;
     
    }
    .span_left{
-    top:109em;
+    top:111em;
     left:1em;
     max-width: 50%;
    }
    .grid_container1{
-    top: 112em;
+    top: 114em;
     max-width: 50%;
     left: 1em;
    }
    .span_right{
-    top:153em;
+    top:147em;
     left:1em;
-    max-width: 10%;
+    max-width: 80%;
    }
    .grid_container2{
-    top: 155em;
+    top: 150em;
     max-width: 50%;
     left: 1em;
    }
    .footer{
-    top: 172em;
+    top: 166em;
     left: 19em;
     transform: translate(-50%, -50%);
     bottom: 0;
