@@ -13,9 +13,10 @@
   margin-bottom: 10px;
  }
  .top_right_logo{
-  position:absolute;
+  position:fixed;
   top:0.5em;
   right: 1em;
+  
  }
  .top_text{
   position: absolute;
@@ -431,9 +432,6 @@ top: 60em;
  
 }
 @media only screen and (width<700px) {
-  .top_right_logo{
-    left: 105%;
-  }
     .top_text{
       min-width: 15em;
       top: 5em;
@@ -490,9 +488,6 @@ top: 60em;
      }
 }
 @media only screen and (width< 400px) {
-  .top_right_logo{
-    left: 105%;
-  }
   .top_text{
     max-width: 15%;
     top: 5em;
