@@ -19,7 +19,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: white;
   text-decoration: inherit;
 }
 a:hover {
@@ -34,7 +34,6 @@ padding: 0;
   min-width: 320px;
   min-height: 100vh;
   height: 100%;
-  overflow-y: scroll;
 }
 
 h1 {

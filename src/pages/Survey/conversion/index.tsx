@@ -1,6 +1,13 @@
+import React from "react";
 import styles from "./conversion.module.scss";
+import { useNavigate } from "react-router-dom";
 
 const Conversion = () => {
+  const navigate = useNavigate();
+  const handleClick = (url) => {
+    // Navigate to a next page
+    navigate(url);
+  };
   return (
     <>
       <div className={styles.main_container}>
@@ -89,7 +96,9 @@ const Conversion = () => {
             </tr>
           </table>
 
-          <button type="button">Upgrade Now</button>
+          <button type="button" onClick={() => handleClick("./club")}>
+            Upgrade Now
+          </button>
         </div>
         <div className={styles.right_selection}>
           <p>
@@ -158,7 +167,9 @@ const Conversion = () => {
             </tr>
           </table>
 
-          <button type="button">Upgrade Now</button>
+          <button type="button" onClick={() => handleClick("./paygo")}>
+            Upgrade Now
+          </button>
         </div>
         <div className={styles.club_benefits}>
           <span>
