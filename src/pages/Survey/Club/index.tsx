@@ -38,11 +38,11 @@ const Club = () => {
             <span>How would you like to collect your card?</span>
           </div>
           <div className={styles.button_container}>
-            <button onclick="selectOption('courier')">
+            <button>
               <img src="/images/bike-icon.png" alt="Bike Icon"></img>
               Deliver via courier
             </button>
-            <button onclick="selectOption('pickup')">
+            <button>
               <img src="/images/pin-icon.png" alt="Pin Icon"></img>
               Select pickup branch
             </button>
@@ -60,9 +60,7 @@ const Club = () => {
               the privacy policy
             </span>
 
-            <button type="submit" onclick="submitForm()">
-              Submit
-            </button>
+            <button type="submit">Submit</button>
           </div>
         </div>
       </div>

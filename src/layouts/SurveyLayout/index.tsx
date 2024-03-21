@@ -1,6 +1,7 @@
 import styles from "./surveyLayout.module.scss";
 import { FaPhoneAlt } from "react-icons/fa";
 import ReactGA from "react-ga";
+import { Outlet } from "react-router-dom";
 
 const SurveyLayout = () => {
   return (
