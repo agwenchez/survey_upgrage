@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./conversion.module.scss";
 import { useNavigate } from "react-router-dom";
 
@@ -96,7 +95,7 @@ const Conversion = () => {
             </tr>
           </table>
 
-          <button type="button" onClick={() => handleClick("./club")}>
+          <button type="button" onClick={() => handleClick("/survey/club")}>
             Upgrade Now
           </button>
         </div>
@@ -167,7 +166,7 @@ const Conversion = () => {
             </tr>
           </table>
 
-          <button type="button" onClick={() => handleClick("./paygo")}>
+          <button type="button" onClick={() => handleClick("/survey/paygo")}>
             Upgrade Now
           </button>
         </div>
