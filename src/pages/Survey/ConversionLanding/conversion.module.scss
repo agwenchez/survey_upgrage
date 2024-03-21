@@ -1,0 +1,240 @@
+.inm__conversion {
+  display: flex;
+  background: url('/images/rightback.png') no-repeat center center;
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  overflow-y:scroll;
+  height: 100vh;
+  max-height: max-content;
+
+  
+}
+  
+  .header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex; /* Use flexbox to create a flexible container */
+    align-items: center; /* Center items vertically */
+    width: 100%;
+    margin: 0;
+    height: 10%;
+              
+  }
+  
+  .visit_message {
+    position: relative; /* Add this to make left work */
+    left: 30%;
+    color: white;
+    font-size: 12px; 
+   
+  }
+  .welcome_message {
+    position: relative; /* Add this to make left work */
+    font-size: 12px; 
+    left: 65%;
+    line-height: 0;
+    border-left: 2px solid white;
+    margin: 5%;
+    width: 5%;
+    height: 3em;
+  }
+  
+  .center_image{
+    position: relative; /* Add this to make left work */
+    left: 10%;
+    width: 70%;
+    height: auto;
+    
+    
+  }
+  .center_text{
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 6%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+    line-height: 0.5em;
+    z-index: 1; /* Ensure the welcome text is above other elements */
+
+  }
+  .belowImage_text{
+    position: absolute;
+    left: 9%;
+    color: white;
+    top: 37%;
+    line-height: 1.5;    
+  }
+  .upgrade_button{
+    position: relative;
+    right: 15%;
+    top: 25%;
+    button {
+      border: 2px solid transparent;
+      border-radius: 15px;
+      padding: 5px 15px;
+      cursor: pointer;
+      outline: none; /* Remove default focus outline */
+      margin-right: 10px;
+  
+      &:not(:focus) {
+        background-color: rgb(255, 98, 0);
+        color: white;
+      }
+  
+      &:focus {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+  .left_table{
+    position: absolute;
+    display: block;
+    left: 45%;
+    color: white;
+    top: 11%;
+    font-size: 12px;
+    padding-right: 5%;
+    
+    
+
+    button {
+      border: 2px solid transparent;
+      border-radius: 20px;
+      padding: 5px 10px;
+      cursor: pointer;
+      outline: none; /* Remove default focus outline */
+      margin-right: 10px;
+  
+      &:not(:focus) {
+        background-color: transparent;
+        color: white;
+      }
+  
+      &:focus {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+  .table {
+    position: relative;
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      tr {
+        &:nth-child(even) {
+          background-color: rgba(108, 108, 108, 0.459); /* See-through grey background for even rows */
+          
+        }
+  
+        td {
+          padding: 2.5px;
+          border-radius: 5px;        
+        }
+      }
+    }
+  }
+  hr {
+    border: 1px solid white; /* Set the border color to white */
+    background-color: white; /* Set the background color to white */
+    height: 2%; /* Adjust the height as needed */
+    margin: 10px 0; /* Adjust the margin as needed */
+  }
+  .bottom_buttons {
+    position: relative;
+    background-color: transparent;
+    display: grid;
+    grid-template-rows: auto;
+    
+  
+    button {
+      border: 1px solid transparent;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      outline: none;
+      margin: 0.5em 1em;
+      max-width: 35%;
+      width: 100%; /* Make buttons take up 100% of the column width */
+      
+      &:not(:focus) {
+        background-color: rgba(108, 108, 108, 0.459);
+        color: white;
+      }
+  
+      &:focus {
+        background-color: white;
+        color: black;
+      }
+    }
+  
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  @media screen and (min-width: 1300px) {
+    .inm__conversion {
+      margin-bottom: 21.5%;
+      margin-left: -18%;
+      min-height: 26.5vh;
+      overflow-y: auto;
+      max-height:max-content;      
+    }
+  }
+  
+  @media screen and (max-width: 1300px) {
+    .inm__conversion {
+      flex: 1 0 auto;
+      margin-left: -26%;
+      min-height: 100vh;
+      overflow-y: auto;
+      max-height:max-content;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .inm__conversion {
+      margin-top: -4em;
+      margin-left: -40%;
+      min-height: 55%;
+      overflow-y: auto;
+      max-height:max-content;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .inm__conversion {
+      margin-left: -6em;
+      padding-bottom: 23%;
+      overflow-y: auto;
+      max-height: max-content;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .inm__conversion {
+      margin: 0;
+      min-width: 10em;
+      text-align: center;
+      max-height:max-content;
+      margin-top: -7em;
+      padding-bottom: 55%;
+      overflow-y: auto;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .inm__conversion {
+      margin-top: -5em;
+      overflow-y: auto;
+      max-height:max-content;
+    }
+  }
