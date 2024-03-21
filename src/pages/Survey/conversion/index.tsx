@@ -1,10 +1,9 @@
-import React from "react";
 import styles from "./conversion.module.scss";
-import { useNavigate } from "react-router-dom";
+import { To, useNavigate } from "react-router-dom";
 
 const Conversion = () => {
   const navigate = useNavigate();
-  const handleClick = (url) => {
+  const handleClick = (url: To) => {
     // Navigate to a next page
     navigate(url);
   };
